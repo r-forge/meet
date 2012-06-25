@@ -37,5 +37,5 @@ iicc$method<-"MATCH"
 
 iicc$pvalor<-0.8
 iicc$parameter<-60
-Match(iicc)
+ModelMATCH(iicc)
 }

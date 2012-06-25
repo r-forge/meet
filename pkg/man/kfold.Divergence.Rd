@@ -1,5 +1,5 @@
-\name{kfold.PredictDivergence}
-\alias{kfold.PredictDivergence}
+\name{kfold.Divergence}
+\alias{kfold.Divergence}
 \title{
 Leave-one-out cross-validation for parametric divergence (ITEME).
 }
@@ -7,7 +7,7 @@ Leave-one-out cross-validation for parametric divergence (ITEME).
 Given a training sequence set, the optimal value for parametric divergence has been estimated by means of leave-one-out cross-validation from q-value set. For each q-value, the ROC curve has been calculated. From this results, the optimal q-value has been considered according to the area under convex surface maximum.
 }
 \usage{
-kfold.PredictDivergence(iicc, TF)
+kfold.Divergence(iicc, TF)
 }
 
 \arguments{
@@ -23,10 +23,10 @@ kfold.PredictDivergence(iicc, TF)
 Joan Maynou <joan.maynou@upc.edu>
 }
 \seealso{
-kfold.PredictInformationTheory, MEME, MDscan, kfold.MATCH and kfold.PCA
+kfold.Entropy, kfold.MEME, kfold.MDscan, kfold.MATCH and kfold.PCA
 }
 \examples{
 data(iicc)
-kfold.PredictDivergence(iicc,TF="SqDNA.fa")
+kfold.Divergence(iicc,TF="SqDNA.fa")
 }
 

@@ -1,9 +1,9 @@
-\name{ModelDivergence}
+\name{ModelEntropy}
 \alias{ModelEntropy}
 \title{To create Model Entropy}
 \description{ From the best parameter, this function, ModelEntropy, calculates the redundancy profile of the set of aligned nucleotide sequences.}
 \usage{
-ModelDivergence(iicc)
+ModelEntropy(iicc)
 }
 
 \arguments{

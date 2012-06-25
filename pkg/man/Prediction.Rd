@@ -5,7 +5,6 @@
 \usage{
 Prediction(iicc)
 }
-\usage{PredictEntropy(iicc), PredictDivergence(iicc), PredictPCA(iicc) , PredictMEME(iicc), PredictMDscan(iicc), PredictMATCH(iicc), PredicttransMEME(iicc)}
 \arguments{
 \item{iicc}{A set of inicial conditions for the MEET-package}
 }

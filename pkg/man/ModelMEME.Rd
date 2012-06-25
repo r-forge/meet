@@ -8,7 +8,7 @@ MEME algortihm to detect TFBS within a sequence
 
 }
 \usage{
-ModelMscan(iicc)
+ModelMEME(iicc)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -18,7 +18,7 @@ ModelMscan(iicc)
 The output is the name of the file where the results are writen}
 \value{
     output: 
-  \item{nameMEME }{name of the MEME file}
+  \item{nameMEME}{name of the MEME file}
   
   
 }
@@ -32,5 +32,5 @@ MEET, kfold.MEME}
 \examples{
 data(iicc)
 iicc$parameterIdeal<-iicc$parameter
-model<-ModelMscan(iicc)
+model<-ModelMEME(iicc)
 }

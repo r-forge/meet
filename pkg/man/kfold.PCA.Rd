@@ -1,17 +1,14 @@
 \name{kfold.PCA}
 \alias{kfold.PCA}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{PCA }
+\title{PCA}
 \description{For a vector of principal components the Q-residuals of a DNA symbolical sequence are calculated using a PCA model of the numerical DNA motif. First sequences are converted to numerical DNA sequences and then the model is applied. A matrix is returned for each number of PC with the value of the Q-residuals in each position and a label indicating if the sequence belong to a binding site or not}
 \usage{
-kfold.PCA(options, Sequence)
+kfold.PCA(iicc, TF)
 }
 \arguments{
-  \item{iicc}{ Options described  in the MEET function.
-}
-  \item{Sequence}{
-  DNA sequences used to construct the motif model
-}
+  \item{iicc}{ Options described  in the MEET function}
+  \item{TF}{DNA sequences used to construct the motif model}
 }
 \details{ Alignment method has to be installed in your computer. 
 
@@ -31,7 +28,7 @@ Erola Pairó <epeiro@ibec.pcb.ub.es>
 
 
 \seealso{
-MEET, kfold.Entropy, kfold.MATCH, kfold.PredictDivergence, PCanalysis, llegir_DNA, convertDNA, numericalDNA. 
+MEET, kfold.Entropy, kfold.MATCH, kfold.Divergence, PCanalysis, llegir_DNA, convertDNA, numericalDNA. 
 }
 \examples{
 data(iicc)
@@ -43,7 +40,7 @@ library(seqinr)
 #writing sequences to model in fasta format
 write.fasta <- get("write.fasta",pos="package:seqinr")
 write.fasta(sequences=TranscriptionFactor,names=c(1:length(TranscriptionFactor)),file.out="Sq.fa",open="w") 
-kfold.PCA(iicc, "Sq.fa")
+kfold.PCA(iicc, TF="Sq.fa")
   
 
 }

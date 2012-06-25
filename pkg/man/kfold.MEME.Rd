@@ -1,5 +1,5 @@
-\name{MEME}
-\alias{MEME}
+\name{kfold.MEME}
+\alias{kfold.MEME}
 \title{
 Leave-one-out cross-validation for MEME
 }
@@ -7,7 +7,7 @@ Leave-one-out cross-validation for MEME
 Given a training sequence set, the optimal length and number motif has been estimated by means of leave-one-out cross-validation from length and number motif set.  From each value, the ROC curve has been calculated.  From this results, the optimal value has been considered according to the area under conver surface maximum
 }
 \usage{
-MEME(iicc, TF)
+kfold.MEME(iicc, TF)
 }
 
 \arguments{
@@ -29,5 +29,5 @@ Joan Maynou <joan.maynou@upc.edu>
 kfold.PredictDivergence, kfold.PredictInformationTheory, MDscan, kfold.MATCH and kfold.PCA}
 \examples{
 data(iicc)
-MEME(iicc,TF="SqDNA.fa")}
+kfold.MEME(iicc,TF="SqDNA.fa")}
 

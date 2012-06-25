@@ -5,7 +5,7 @@
 This detection algorithm is based on Information Theory.  Specifically, this method uses a parametric divergence.  This algorithm evaluates the variation on the total Rényi entropy of a set of sequences assuming correlation between positions in the bindng sequence.  When a candidate sequence is assumed to be a a true binding site belonging to the set.The measurement of the variation of the total redundancy when the candidate sequence is added to the set has been computed by using the difference between the redundancy profile.
 }
 \usage{
-detector_2nOrdre(training.set, val.set, options)
+detector_2nOrdre(training.set, val.set, iicc)
 }
 
 \arguments{
@@ -24,7 +24,7 @@ detector_2nOrdre(training.set, val.set, options)
 Joan Maynou <joan.maynou@upc.edu>
 }
 \seealso{
-detector_1rOrdre_diff, MEME, MDscan, Q-residuals and MATCH
+detector_1rOrdre_diff
 }
 \examples{
 data(iicc)

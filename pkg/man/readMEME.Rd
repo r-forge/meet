@@ -1,5 +1,5 @@
-\name{read.MEME}
-\alias{read.MEME}
+\name{readMEME}
+\alias{readMEME}
 \title{
 Read MEME motifs and consensus sequences
 }

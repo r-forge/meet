@@ -8,7 +8,7 @@ MDscan algortihm to detect TFBS within a sequence
 
 }
 \usage{
-ModelMscan(iicc)
+ModelMDscan(iicc)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -32,5 +32,5 @@ MEET, kfold.MDscan}
 \examples{
 data(iicc)
 iicc$parameterIdeal<-iicc$parameter
-model<-ModelMscan(iicc)
+model<-ModelMDscan(iicc)
 }

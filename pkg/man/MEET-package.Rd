@@ -38,9 +38,6 @@ LazyLoad: \tab yes\cr
   \item{gapextend}{The gap extend score}
  
 }
-\details{
-This function need the next packages: seqinr, fields, pcaMethods, Matrix, ROCR, Hmisc, KernSmooth. Moreover, it needs the next software: MEME/MAST Version 4.4.0, MATCH Version 1.0, MDscan, ClustalW and Muscle Version 3.8.}
-
 
 \author{
 Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>

@@ -7,7 +7,7 @@ Probability
 This function calculates the probability of random varible with N states considering missing values.
 }
 \usage{
-probability(wind, Prob, missing.fun = NULL, ...)
+probability(wind, Prob, missing.fun = NULL)
 }
 \arguments{
   \item{wind}{A set of nucleotide aligned sequences}

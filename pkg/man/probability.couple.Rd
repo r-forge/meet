@@ -6,7 +6,7 @@ Background joint probability}
 Background joint probability
 }
 \usage{
-probabilitat.couple(Prob)
+probability.couple(Prob)
 }
 \arguments{
 	\item{Prob}{Probability of each base within genome}}

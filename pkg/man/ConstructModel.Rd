@@ -1,20 +1,26 @@
 \name{ConstructModel}
 \alias{ConstructModel}
-\title{To create Detection Model}
-\description{ From the best parameter, this function,ConstructModel, calculates the detection model of the set of aligned nucleotide sequences. There are different kinds of models: Entropy, Divergence, PCA, MEME, MDscan, MATCH and transMEME}
-\usage{
-ContructModel(iicc)
+\title{
+A set of functions for training of motif discovery algorithms.
 }
-\usage{ModelEntropy(iicc), ModelDivergence(iicc), ModelPCA(iicc) , ModelMEME(iicc), ModelMDscan(iicc), ModelMATCH(iicc), ModeltransMEME(iicc)}
-\arguments{
-\item{iicc}{A set of inicial conditions for the MEET-package}
+\description{
+This function contains a set of functions for training of motif discovery algorithms. Specifically, the motif discovery algorithms are ITEME, MEME, MDscan, MATCH and Qresiduals.}
+\usage{
+ConstructModel(iicc, TF)
 }
 
-\author{
-Joan Maynou <joan.maynou@upc.edu> and Erola Pairó  <epeiroibec.pcb.ub.es>
+\arguments{
+  \item{iicc}{Set of initial conditions for the MEET-package: mode, method, background,alignment,threshold,parameters,Transcriptionfactor,nummotif,lenmotif,sentit,position,missing,vector,gapopen,maxiters,gapextend}
+  \item{TF}{A set of nucleotide sequences}
 }
+
+\details{This function has two output: validation scores and ROC curve.}
+
+\author{
+Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>}
+\seealso{
+MEET, detection}
 \examples{
 data(iicc)
-ConstructModel(iicc)
-}
+ConstructModel(iicc,TF="SqDNA.fa")}
 

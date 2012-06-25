@@ -1,5 +1,5 @@
 \name{entropy.Shannon}
-\alias{entropy Shannon}
+\alias{entropy.Shannon}
 \title{
 Shannon Entropy
 }
@@ -7,7 +7,7 @@ Shannon Entropy
 This function calculates the Shannon's entropy of the variable X with N possible states
 }
 \usage{
-entropy.Shannon(wind, q)
+entropy.Shannon(wind)
 }
 
 \arguments{

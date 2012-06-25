@@ -6,7 +6,7 @@ Divergencia.Shannon: Mutual Information
 \description{
 This function calculates Mutual Information (Rényi Order equal 1) by means of Kullback-Leibler divergence}
 \usage{
-divergence.Shannon(training.set, prob_parella, H, HXY, HXmax, q, correction)
+divergence.Shannon(training.set, H, HXY,correction)
 }
 \arguments{
   \item{training.set}{A set of aligned nucleotide sequences}

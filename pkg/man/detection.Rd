@@ -9,7 +9,7 @@ This function contains a set of functions for detection of Transcription Factor 
 detection(iicc)
 }
 \arguments{
-  \item{options}{Set of initial conditions for the MEET-package: mode, method, 
+  \item{iicc}{Set of initial conditions for the MEET-package: mode, method, 
                  background,alignment,pvalor,parameters,Transcriptionfactor,
 		 nummotif,lenmotif,sentit,position,missing,vector,gapopen,
 		 maxiters,gapextend}
@@ -21,7 +21,7 @@ detection(iicc)
 Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>}
 
 \seealso{
-MEET, validation}
+MEET, ConstructModel}
 \examples{
 data(iicc)
 detection(iicc)}

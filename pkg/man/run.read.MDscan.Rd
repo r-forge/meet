@@ -6,13 +6,14 @@ Run and read MDscan on validation
 \description{
 This function runs and reads MDscan on validation mode.}
 \usage{
-run.read.MDscan(input, k, len_motif, num_motif)
+run.read.MDscan(input, k, len_motif, num_motif,call.MDscan)
 }
 \arguments{
   \item{input}{DNA sequence}
   \item{k}{Length DNA candidate seqeunce}
   \item{len_motif}{Length motif}
   \item{num_motif}{Number motif}
+  \item{call.MDscan}{Path MDscan}
 }
 \details{
 This function needs seqinr-Package and MDscan software.}
@@ -26,5 +27,6 @@ X. S. Liu, D. L. Brutlag, and J. S. Liu, “An algorithm for finding proteindna 
 \seealso{MEET, kfold.PredictInformationTheory, MEME, kfold.PredictDivergence, kfold.PCA}
 \examples{
 data(iicc)
-run.read.MDscan(input=iicc$DNA,k=length(iicc$DNA), len_motif=c(10,11,12), num_motif=2)}
+run.read.MDscan(input=iicc$DNA,k=length(iicc$DNA),
+len_motif=c(10,11,12), num_motif=2. call.MDscan)}
 

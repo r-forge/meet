@@ -8,11 +8,12 @@ MAST algorithm to detect TFBS in a sequence
 
 }
 \usage{
-PredicttransMEME(iicc)
+PredicttransMEME(iicc,TF)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{iicc}{options of the MEET program}
+ \item{TF}{Transcription Factor}
 }
 \details{
 Uses the transMEME constructed motif}
@@ -35,6 +36,6 @@ data(iicc)
 data(TranscriptionFactor)
 iicc$method<-"transMEME"
 ModelTFBs<-ModeltransMEME(iicc)
-DetectedSequences<-PredicttransMEME(iicc)
+DetectedSequences<-PredicttransMEME(iicc, TF="Ap1.fa")
 
 }

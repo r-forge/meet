@@ -8,13 +8,13 @@
 Using seqinr R package, constructs a consensus DNA sequences from a set of aligned Sequences
 }
 \usage{
-CreateConsensus(alignedSequences)
+CreateConsensus(alignedSequences,iicc)
 }
 
 \arguments{
   \item{alignedSequences}{
-Aligned DNA sequences
-}
+Aligned DNA sequences}
+	\item{iicc}{Initial options}
 }
 \details{
 package "seqinr" is required
@@ -35,7 +35,8 @@ align.clustalw, align.MEME, read.aligned, align.muscle
 }
 \examples{
 data(TranscriptionFactor)
-SeqCons<-CreateConsensus(TranscriptionFactor)
+data(iicc)
+SeqCons<-CreateConsensus(TranscriptionFactor,iicc)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -1,5 +1,5 @@
-\name{transMEME}
-\alias{transMEME}
+\name{kfold.transMEME}
+\alias{kfold.transMEME}
 \title{
 Leave-one-out cross-validation for MEME/MAST through training.matrix aligned with MUSCLE or CLUSTALW.
 }
@@ -7,7 +7,7 @@ Leave-one-out cross-validation for MEME/MAST through training.matrix aligned wit
 This function does leave-one-out cross-validation for MEME/MAST.  In this case, a set of nucleotide sequences is lined up MUSCLE and CLUSTALW.  This is main difference between transMEME and MEME.
 }
 \usage{
-transMEME(iicc, TF)
+kfold.transMEME(iicc, TF)
 }
 
 \arguments{
@@ -26,8 +26,8 @@ T. Bailey and C. Elkan, “Fitting a mixture model by expectation max- imization
 Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
 }
 
-\seealso{MEET, kfold.PredictInformationTheory, transMEME,MEME, kfold.PredictDivergence, kfold.PCA}
+\seealso{MEET, kfold.Entropy, kfold.transMEME,kfoldMEME, kfold.Divergence, kfold.PCA}
 \examples{
 data(iicc)
-transMEME(iicc,TF="SqDNA.fa")}
+kfold.transMEME(iicc,TF="SqDNA.fa")}
 

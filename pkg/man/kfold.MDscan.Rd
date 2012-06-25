@@ -7,7 +7,7 @@ Leave-one-out cross-validation for MDscan.
 Given a training sequence set, the optimal length and number motif has been estimated by means of leave-one-out cross-validation from length and number motif set.  From each value, the ROC curve has been calculated.  From this results, the optimal value has been considered according to the area under conver surface maximum
 }
 \usage{
-MDscan(iicc, TF)
+kfold.MDscan(iicc, TF)
 }
 
 \arguments{
@@ -23,10 +23,10 @@ Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{
-kfold.PredictDivergence, kfold.PredictInformationTheory, MEME, kfold.MATCH and kfold.PCA
+kfold.Divergence, kfold.Entropy, kfold.MEME, kfold.MATCH and kfold.PCA
 }
 \examples{
 data(iicc)
-MDscan(iicc,TF="SqDNA.fa")
+kfold.MDscan(iicc,TF="SqDNA.fa")
 }
 

@@ -6,7 +6,7 @@ CalculRedundancy: To calculate the redundancy
 \description{
 This function calculates the redundancy (order) of a random variable X with N possible states.}
 \usage{
-CalculRedundancy(Factortrans, Prob, q, Herror, HXmax)
+CalculRedundancy(Factortrans, q,iicc)
 }
 \arguments{
   \item{Factortrans}{ A set of aligned nucleotide sequences}

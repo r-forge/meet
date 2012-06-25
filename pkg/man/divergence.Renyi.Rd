@@ -5,7 +5,7 @@
 This function calculates parametric divergence (Rényi Order different 1)
 }
 \usage{
-divergence.Renyi(training.set, pmX, pmXY, prob_parella, H, HXY, HXmax, q, correction)
+divergence.Renyi(training.set, pmX, pmXY, q, correction)
 }
 \arguments{
   \item{training.set}{ A set of aligned nucleotide sequences}
