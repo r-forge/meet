@@ -1,8 +1,8 @@
-transMEME <-
+kfold.transMEME <-
 function(iicc,TF) {
  
-   require(MEET)
-    require(seqinr)
+   require("MEET")
+    require("seqinr")
     
     
     write.fasta <- get("write.fasta",pos="package:seqinr")
@@ -77,7 +77,7 @@ function(iicc,TF) {
   		      }
   	}
  	
-  
+    
 	return(MEME_logthresholds)
  }
 

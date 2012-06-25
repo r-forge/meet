@@ -6,4 +6,5 @@ ModeltransMEME<-function(iicc){
   listfactor<-lapply(c(1:nrow(factor)),function(x){factor[x,]})
   writeMEME(factor,0)
 
+
 }

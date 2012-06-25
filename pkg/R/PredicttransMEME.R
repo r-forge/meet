@@ -1,5 +1,5 @@
 PredicttransMEME <- function(iicc,TF) {
-    require(seqinr)
+    require("seqinr")
     read.fasta <- get("read.fasta",pos="package:seqinr")
 	
 	

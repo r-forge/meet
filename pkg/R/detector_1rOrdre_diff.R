@@ -17,7 +17,7 @@ detector_1rOrdre_diff <-function(training.set, val.set, iicc)
 	
 	HX 	<- entropy.corrected( H, ErrorHX, HXmax)
 
-	out_det <- diff.instructions(training.set.mes.rand, HX, HXmax,Herror, Redundancia_corregida)
+	out_det <- diffInstructions(training.set.mes.rand, HX, HXmax,Herror, Redundancia_corregida)
 	
 	out<-(1/(out_det+.Machine$double.eps))
 }

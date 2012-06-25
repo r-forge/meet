@@ -1,5 +1,5 @@
 align.MEME <-function(filein=TF,fileout="Sq.fa",iicc){
-	require(MEET)
+	require("MEET")
 	num_motif<-iicc$nummotif
 	len_motif<-iicc$lenmotif
 	call.meme=iicc$call.meme

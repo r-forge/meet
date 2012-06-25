@@ -1,9 +1,10 @@
-MEET <-function(TF,seqin,alg="CLUSTALW",method="MATCH",system="validation",org="Homo sapiens",vector=c(1:10),num_motif=1,len_motif=12,direction="f",threshold=0.1,order=NULL,model=NULL, position=c(501),mv=50,gapopen=-500,maxiters=16,gapextend=-2, optionsFile='.optionsmeet'){
+MEET <-function(TF=NULL,nameTF=NULL,seqin,alg="NONE",method="Qresiduals",mode="training",org="Homo sapiens",vector=c(1:10),num_motif=1,len_motif=12,direction="f",threshold=0.1,order=NULL,model=NULL, position=c(501),mv=50,gapopen=-500,maxiters=16,gapextend=-2, optionsFile='.optionsmeet'){
 
  
       require(seqinr)
       require(fields)
       require(MEET)
+      require(methods)
 
       checkpaths <- function(executable){
         out <- switch(.Platform$OS.type,
@@ -54,13 +55,15 @@ MEET <-function(TF,seqin,alg="CLUSTALW",method="MATCH",system="validation",org="
       write.fasta <- get("write.fasta",pos="package:seqinr")
       read.fasta <- get("read.fasta",pos="package:seqinr")
      
-      iicc<-vector(mode="list", length=25)
+      iicc<-vector(mode="list", length=28)
       
-      names(iicc)<-c("mode", "method", "background","alignment","pvalue","parameters","model","Transcriptionfactor",
-      "nummotif","lenmotif","direction","outsequence","position","missing","vector","gapopen","maxiters","gapextend","clustalw","muscle","meme","mast","transfac2meme","Mdscan","DNA")
+      names(iicc)<-c("mode", "method","nameTF","organism", "background","alignment","pvalue","parameters","model","Transcriptionfactor",
+      "nummotif","lenmotif","direction","outsequence","position","missing","vector","gapopen","maxiters","gapextend","clustalw","muscle","meme","mast","transfac2meme","Mdscan","DNA", "parameterIdeal")
 	
-      iicc$mode=system
+      iicc$mode=mode
       iicc$method=method
+      iicc$nameTF=nameTF
+      iicc$organism=org
       iicc$background= organism[org,]
       iicc$alignment=alg
       iicc$threshold<-threshold
@@ -82,6 +85,7 @@ MEET <-function(TF,seqin,alg="CLUSTALW",method="MATCH",system="validation",org="
 	  iicc$mast<-as.character(meetconf["call.mast"])
 	  iicc$transfac2meme<-as.character(meetconf["call.transfac2meme"])
 	  iicc$MDscan<-as.character(meetconf["call.MDscan"])
+      iicc$parameterIdeal<-NULL
 	
 	if(iicc$direction!="b"){ iicc$DNA<-vector(mode="list", length=1)
       
@@ -112,19 +116,28 @@ MEET <-function(TF,seqin,alg="CLUSTALW",method="MATCH",system="validation",org="
      
       write.table(background, "bfile", col.names=FALSE, quote=FALSE)
       
-      alignedSequences<-switch(iicc$alignment, "CLUSTALW"=align.clustalw(filein=TF, fileout="SetTF.fa", call=iicc$clustalw), "MUSCLE"=align.muscle(filein=TF, fileout="SetTF.fa", gapopen=iicc$gapopen, maxiters=iicc$maxiters, gapextend=iicc$gapextend, call=iicc$muscle),"MEME"=align.MEME(filein=TF,fileout="SetTF.fa",iicc),"NONE"=Read.aligned(TF), stop("Alignment method not included"))
-          
       output<-vector(mode="list", length=3)
       names(output)<-c("Consensus", "Summary", "Results")
 
-	 
-	  iicc$Transcriptionfactor<-alignedSequences
-	  output$Consensus<-CreateConsensus(alignedSequences,iicc)
-	  iicc$Consensus<-output$Consensus
+      if (is.null(iicc$nameTF)=="TRUE" & is.null(TF)!=TRUE){
+             
+                alignedSequences<-Alignment(TF,iicc)
+                iicc$Transcriptionfactor<-alignedSequences
+                output$Consensus<-CreateConsensus(alignedSequences,iicc)
+                iicc$Consensus<-output$Consensus
 
-	  output$Results<-switch(iicc$mode, "validation"=validation(iicc,TF), "detection"=detection(iicc))
+            }else{
+            
+            
+            
+                iicc$Transcriptionfactor<-NULL
+                iicc$Consensus<-NULL
+                
+        
+        }   
+          
+	  output$Results<-switch(iicc$mode, "training"=ConstructModel(iicc,TF), "detection"=detection(iicc))
       output$Summary<-iicc
-      
-      return(output)
+    return(output)
 }
 

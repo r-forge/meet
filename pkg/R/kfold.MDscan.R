@@ -1,6 +1,6 @@
-MDscan <-function(iicc,TF){
+kfold.MDscan <-function(iicc,TF){
 
-    require(seqinr)
+    require("seqinr")
 	require("MEET")
 
     write.fasta <- get("write.fasta",pos="package:seqinr")
@@ -35,8 +35,8 @@ MDscan <-function(iicc,TF){
 	  }
 	}
 	SCOREtotal <- lapply(Scoretotal, function(x){as.vector(t(x))})
-					
+                
 	return(SCOREtotal) 
-	    
-    }
+	
+}
 

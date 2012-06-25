@@ -1,6 +1,6 @@
 ModelDivergence<-function(iicc){
 	
-	require(MEET)	
+    require("MEET")	
 	Prob<-iicc$background
 	Prob<-as.numeric(Prob)
 	training.set<-Factortrans<-matriu<-iicc$Transcriptionfactor
@@ -24,6 +24,7 @@ ModelDivergence<-function(iicc){
 	parametersModel<-list(Order=iicc$q,HXmax=iicc$Hmax,correction_1rOrdre=iicc$correction_1rOrdre,Entropy=iicc$HX,D=iicc$D,Mperfil=iicc$Mperfil,interA=iicc$interA,interB=iicc$interB)
 	y<-list(model=iicc$Divergence,parameterModel=parametersModel)	
 	return(y)
+    
 }
 
 	

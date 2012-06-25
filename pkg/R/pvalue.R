@@ -1,6 +1,7 @@
 pvalue <-function (a,dist){
 	require("KernSmooth")
-	require("Hmisc")	
+	require("Hmisc")
+
 if(sd(dist)==0){
 	if(a>mean(dist)){
 		pvalue <- 0

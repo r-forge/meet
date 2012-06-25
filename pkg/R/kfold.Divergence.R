@@ -54,7 +54,8 @@ kfold.Divergence <-function(iicc,TF){
 	  })
 	  unlist(out[[i]])
 	})
-	
+
+
  return(Resultats)
 }
 

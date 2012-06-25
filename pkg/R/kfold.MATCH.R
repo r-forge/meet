@@ -1,6 +1,6 @@
 kfold.MATCH <-
 function(iicc, Seqin){
-library(MEET)
+library("MEET")
    write.fasta <- get("write.fasta",pos="package:seqinr")
     read.fasta <- get("read.fasta",pos="package:seqinr")
   
@@ -75,8 +75,8 @@ library(MEET)
       iicc$index<-index
       CoreSeq<- Background[,index:(index+4)]
       
-      Scores<-apply (Background,1, calculScores,logodds=iicc$logodds)
-      CoreScores<-apply(CoreSeq,1,calculScores, logodds=iicc$core)
+      Scores<-apply (Background,1, CalculScores,logodds=iicc$logodds)
+      CoreScores<-apply(CoreSeq,1,CalculScores, logodds=iicc$core)
      
       Similarity<-sapply(Scores,CalculSimilarity, minim=iicc$minim, maxim=iicc$maxim)
       
@@ -100,8 +100,8 @@ library(MEET)
      
 
   }
-  
+
   ROCcurve
- 
+
 }
 

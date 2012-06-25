@@ -1,5 +1,5 @@
 ModelEntropy<-function(iicc){
-  require(MEET)	
+  require("MEET")	
   Prob<-iicc$background
   training.set<-Factortrans<-matriu<-iicc$Transcriptionfactor
   iicc$missing.fun=TRUE
@@ -21,4 +21,6 @@ ModelEntropy<-function(iicc){
   parametersModel<-list(Order=iicc$q,HXmax=iicc$HXmax,ErrorHX=iicc$ErrorHX,Redundancy=iicc$Redundancia_corregida)		
   y<-list(model=iicc$Entropy,parameterModel=parametersModel)	
   return(y)	
+
+
 }

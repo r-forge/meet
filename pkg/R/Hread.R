@@ -13,7 +13,7 @@ Hread<-function(training.set.mes.rand,val.set,iicc){
 		HX[i]<-iicc$Entropy[[p[[i]]]][i]
 		}
 	
-	out_det <- diff.instructions(training.set.mes.rand, HX, HXmax,Herror, Redundancia_corregida)
+	out_det <- diffInstructions(training.set.mes.rand, HX, HXmax,Herror, Redundancia_corregida)
 	
 	out<-(1/(out_det+.Machine$double.eps))
 	}

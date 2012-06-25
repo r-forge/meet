@@ -10,5 +10,6 @@ len_motif<-iicc$lenmotif
    write.fasta(input, names="sequenciaEstudi", nbchar = k, file.out="sequenciaEstudi.fa",open="w")
   mdscan<-paste(call.MDscan," -i sequenciaEstudi.fa -w")
   system(paste(paste(paste(paste(paste(paste(paste(mdscan, len_motif,sep=" "),"-t", sep=" "), num_motif,sep=" "),"-b background.fa", sep=" "),"-r",sep=" "), num_motif,sep=" ") ,"-o res")) 
+    
 
 }

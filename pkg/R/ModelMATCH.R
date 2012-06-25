@@ -32,5 +32,6 @@ ModelMATCH<-function(iicc){
     parametersModel<-list(posCore=index, minim_core=minim_core, maxim_core=maxim_core, minim=minim, maxim=maxim, Corecut=iicc$parametersIdeal, logodds=logodds, core=core, ncolTFBS=ncolTFBS)
 
     model=list(model=logodds, parametersModel=parametersModel)
+
       
 }

@@ -1,11 +1,10 @@
-
+ 3
 correction.entropy <-function(q,p,long,iicc){
 	
 	Prob<-as.numeric(iicc$background)
 	
-	setClass("correction",representation(Herror="vector",sderror="vector"),prototype(Herror=vector("numeric"),sderror=vector("numeric")))
-	
-	
+#setClass("correction",representation(Herror="vector",sderror="vector"),prototype(Herror=vector("numeric"),sderror=vector("numeric")))
+
 	Herror<-sderror<-VAR<-vector("numeric",p)
 	for (pp in c(1:p)){
 		Etotal<-Va<-0
@@ -26,9 +25,10 @@ correction.entropy <-function(q,p,long,iicc){
 		VAR[pp]<-Va-(Etotal^2)
 	}
 sderror<-(long*VAR)^(1/2)
-resultat<-new("correction")
-slot(resultat,"Herror")<-Herror
-slot(resultat,"sderror")<-sderror
-resultat
+    resultat<-new("correction")
+    slot(resultat,"Herror")<-Herror
+    slot(resultat,"sderror")<-sderror
+    #resultat<-list(Herror=Herror,sderror=sderror)
+return(resultat)
 }
 

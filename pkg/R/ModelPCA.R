@@ -1,6 +1,6 @@
 ModelPCA<-function(iicc){
     
-    nPCs<-iicc$parametersIdeal
+    nPCs<-iicc$parameterIdeal
     
     TFBS<-iicc$Transcriptionfactor
      Prob<-iicc$background
@@ -12,9 +12,10 @@ ModelPCA<-function(iicc){
     ncolTFBS<-ncol(TFBS)
     TFBSnum<-apply(TFBS,1,function(x){as.vector(t(NumericalMatrix[x,]))})
     TFBSnum<-t(TFBSnum)
-    model<-pca(TFBSnum, nPcs=nPCs, method="svd", center=TRUE)
+       model<-pca(TFBSnum, nPcs=nPCs, method="svd", center=TRUE)
     JacksonPars<-JacksonParameters(nPCs,TFBSnum)
     parametersModel<-list(NumericalMatrix=NumericalMatrix,JacksonPars=JacksonPars, ncolTFBS=ncolTFBS)
     y<-list(model=model, parametersModel=parametersModel)
     return(y)
+    
 }

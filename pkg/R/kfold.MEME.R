@@ -1,6 +1,6 @@
-MEME <-function(iicc,TF){
+kfold.MEME <-function(iicc,TF){
 
-    require(seqinr)
+    require("seqinr")
         
     write.fasta <- get("write.fasta",pos="package:seqinr")
     read.fasta <- get("read.fasta",pos="package:seqinr")
@@ -73,7 +73,7 @@ MEME <-function(iicc,TF){
 	return(out)
 	
  	})
-	
+
 	return(MEME_logthresholds)
 	
   }

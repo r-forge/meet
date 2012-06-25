@@ -1,6 +1,6 @@
 PredictMEME <-function(iicc){
     
-    require(seqinr)
+    require("seqinr")
    
     read.fasta <- get("read.fasta",pos="package:seqinr")
 	
@@ -29,5 +29,6 @@ PredictMEME <-function(iicc){
 	    }
 	    return(output)
     }
+
 }
 

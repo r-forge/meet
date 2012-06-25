@@ -1,6 +1,6 @@
 PredictMDscan <-function(iicc){
- require(seqinr)
- require(MEET)
+ require("seqinr")
+ require("MEET")
            
  write.fasta <- get("write.fasta",pos="package:seqinr")
  read.fasta <- get("read.fasta",pos="package:seqinr")
@@ -26,6 +26,7 @@ PredictMDscan <-function(iicc){
       output[[i]]<-lapply(c(1:nrow(DetectedFactors)),function(x){cbind(Sequence=paste(Sequence[DetectedFactors[x,1]:(DetectedFactors[x]+len_motif)],sep="",collapse=""),pvalue=DetectedFactors[x,2], position=DetectedFactors[x,1])})
       }
     }
-    return(output)  
+    return(output) 
+
 }
 
