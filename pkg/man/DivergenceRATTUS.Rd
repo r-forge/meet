@@ -15,7 +15,7 @@ DivergenceRATTUS(nameTF)
 \details{
 	The needed iicc is the vector of parameters to study }
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>}
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 
 \seealso{
 MEET,EntropyHOMO,EntropyDROSOPHILA,EntropyMUS,EntropyRATTUS,DivergenceHOMO,DivergenceMUS,DivergenceRATTUS,DivergenceMUS}

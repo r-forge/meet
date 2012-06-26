@@ -24,6 +24,7 @@ PredictEntropy, PredictMEME, PredictMDscan, PredictPCA and PredictMATCH
 }
 \examples{
 data(iicc)
-PredictDivergence(iicc,TF="SqDNA.fa")
+pathMEET<-system.file("data",package="MEET")
+PredictDivergence(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))
 }
 

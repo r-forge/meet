@@ -40,9 +40,10 @@ LazyLoad: \tab yes\cr
 }
 
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \examples{
-data(organism)
-results<-MEET(TF="SqDNA.fa",seqin="DNA4.afa",alg="CLUSTALW",method="Entropy",system="detection",org="Saccharomyces cerevesiae",vector=1,num_motif=2,len_motif=12,sentit="b",threshold=0.001,order=1,position=501,mv=NULL,gapopen=NULL,maxiters=NULL,gapextend=NULL,xlim=NULL,errorbarby=NULL,avg=NULL)}
+
+pathMEET<-system.file("data",package="MEET")
+TrainingResult<-MEET(TF=paste(pathMEET,"AP1.fa",sep="/"), seqin=paste(pathMEET,"DNAhomo.fa",sep="/"),alg="NONE",mode="training",org="Homo sapiens", method="Qresiduals",vector=c(1:8)) }

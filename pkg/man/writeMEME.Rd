@@ -18,7 +18,7 @@ writeMEME(matriu, m)
 
 
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{

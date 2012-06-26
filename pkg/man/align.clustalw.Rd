@@ -15,8 +15,9 @@ align.clustalw(filein = TF, fileout = "Sq.fa", call=call.clustalw)
 \references{
 J. Thompson, D. Higgins, and T. Gibson, “Clustal w: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, positions-specific gap penalties and weight matrix choice,” Nucleic Acids Res., vol. 22, pp. 4673–4680, 1994.
 }
-\author{Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>.}
+\author{Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>.}
 \seealso{align.MEME, align.MUSCLE}
 \examples{
-align.clustalw(filein="SqDNA.fa", fileout="Sq.fa", call="clustalw2")}
+pathMEET<-system.file("data",package="MEET")
+align.clustalw(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa",call=call.clustalw)}
 

@@ -16,7 +16,7 @@ ROCmodel(Scores, labels, iicc)
 This functions needs the ROCR package.}
 
 \author{
-Erola Pairo <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \examples{

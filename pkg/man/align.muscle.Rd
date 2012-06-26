@@ -32,13 +32,14 @@ R. C. Edgar, “MUSCLE: multiple sequence alignment with high accuracy and high 
 
 }
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{
 align.clustalw, align.MEME
 }
 \examples{
-align.muscle(filein="SqDNA.fa", fileout="Sq.fa", gapen=-12, maxiters=16, gapextend=-1, call="muscle")
+pathMEET<-system.file("data",package="MEET")
+align.muscle(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa", gapen=-12, maxiters=16, gapextend=-1, call="muscle")
 }
 

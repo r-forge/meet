@@ -27,7 +27,8 @@ library(seqinr)
 write.fasta <- get("write.fasta",pos="package:seqinr")
 read.fasta <- get("read.fasta",pos="package:seqinr")
 data(iicc)
-TF="SqDNA.fa" 	
+pathMEET<-system.file("data",package="MEET")
+TF=paste(pathMEET,"AP1.fa",sep="/")	
 x<-read.fasta(file=TF)
 m<-1
 if (iicc$alignment!="NONE"){ 	

@@ -27,7 +27,7 @@ A.E. Kel , E. Gößling , I. Reuter , E. Cheremushkin , O.V. Kel-Margoulis , and
 MATCHTM: a tool for searching transcription factor binding sites in DNA sequences 
 Nucl. Acids Res. 31: 3576-3579.}
 \author{
-Erola Pairó <epeiro@ibec.pcb.ub.es>
+Erola Pairó <epairo@ibecbarcelona.eu>
 }
 \seealso{
 Match, MEET

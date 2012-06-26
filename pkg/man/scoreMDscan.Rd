@@ -18,7 +18,7 @@ scoreMDscan(input, k, matriu, direction)
 Output's run.read.MDscan is input's scoreMDscan}
 
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 

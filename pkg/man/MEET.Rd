@@ -38,5 +38,6 @@ This function need the next packages: seqinr, fields, pcaMethods, Matrix, ROCR, 
 
 
 \examples{
-data(organism)
-results<-MEET(TF="SqDNA.fa",seqin="DNA4.afa",alg="CLUSTALW",method="entropy",system="detection",org="Saccharomyces cerevesiae",vector=1,num_motif=2,len_motif=12,sentit="b",threshold=0.001,order=1,model=NULL,position=501,mv=NULL,gapopen=NULL,maxiters=NULL,gapextend=NULL,optionsFile)}
+pathMEET<-system.file("data",package="MEET")
+Detection<-MEET(org="Drosophila melanogaster",nameTF="a1",seqin=paste(pathMEET,"DNAmeet.afa",sep="/"),method="Divergence",mode="detection",threshold=0.001)
+} 

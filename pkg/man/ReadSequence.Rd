@@ -27,7 +27,7 @@ matriuSeq:numerical matrix representing de DNA sequence.
 Silverman, B.D., and Linske, R.: A measure of DNA periodicity, Journal of Theoretical Biology 118, volume 118, 295–300, 1986
 }
 \author{
-Erola Pairó <epeiro@ibec.pcb.ub.es>
+Erola Pairó <epairo@ibecbarcelona.eu>
 }
 
 

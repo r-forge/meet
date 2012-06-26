@@ -25,7 +25,7 @@ logodds: logodds matrix calculated as a log2 of the frequency matrix
 }
 
 \author{
-Erola Pairó <epeiro@ibec.pcb.ub.es>
+Erola Pairó <epairo@ibecbarcelona.eu>
 }
 
 

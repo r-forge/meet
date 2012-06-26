@@ -1,6 +1,6 @@
 \name{Alignment}
 \alias{Alignment}
-\title{To line up Transcription Factor Binding sites through Multiple Sequence Alignment (MSA)}
+\title{To line up Transcription Factor Binding Sites through Multiple Sequence Alignment (MSA)}
 \description{This function, Alignment, lines up Transcription Factor Binding Sites, TFBS, through MSA. There are different kinds of MSA: MEME, Clustalw and Muscle}
 
 \usage{Alignment(TF,iicc)}
@@ -10,10 +10,11 @@
 }
 
 \author{
-Joan Maynou <joan.maynou@upc.edu> and Erola Pairó  <epeiroibec.pcb.ub.es>
+Joan Maynou <joan.maynou@upc.edu> and Erola Pairó  <epairo@ibecbarcelona.eu>
 }
 \examples{
 data(iicc)
-Alignment(TF="Ap1.fa",iicc)
+pathMEET<-system.file("data",package="MEET")
+Alignment(TF=paste(pathMEET,"AP1.fa",sep="/"),iicc)
 }
 

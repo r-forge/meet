@@ -23,7 +23,7 @@ Jolliffe I.T. Principal Component Analysis, Series: Springer Series in Statistic
 Stacklies, Wolfram, Redestig, Henning, Scholz, Matthias, Walther, Dirk, and Selbig, Joachim: pcaMethods a bioconductor package providing PCA methods for incomplete data, Bioinformatics 23(9), volume 23, 1164–1167, 2007
 }
 \author{
-Erola Pairó <epeiro@ibec.pcb.ub.es>
+Erola Pairó <epairo@ibecbarcelona.eu>
 }
 
 

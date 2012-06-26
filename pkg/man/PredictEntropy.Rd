@@ -24,7 +24,6 @@ Joan Maynou <joan.maynou@upc.edu>}
 
 \seealso{PredictDivergence, PredictMEME, PredictMDscan, PredictPCA, PredictMATCH}
 \examples{
-
 data(iicc)
 PredictEntropy(iicc)}
 

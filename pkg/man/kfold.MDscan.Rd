@@ -19,7 +19,7 @@ kfold.MDscan(iicc, TF)
 X. S. Liu, D. L. Brutlag, and J. S. Liu, “An algorithm for finding proteindna binding sites with applications to chromatin-immunopre- cipitation microarray experiments,” Nat. Biotechnol. vol. 20, no. 8, pp. 835–839, Aug. 2002 [Online]. Available: http://dx.doi.org/10.1038/ nbt717
 }
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{
@@ -27,6 +27,7 @@ kfold.Divergence, kfold.Entropy, kfold.MEME, kfold.MATCH and kfold.PCA
 }
 \examples{
 data(iicc)
-kfold.MDscan(iicc,TF="SqDNA.fa")
+pathMEET<-system.file("data",package="MEET")
+kfold.MDscan(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))
 }
 

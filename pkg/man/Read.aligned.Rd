@@ -14,12 +14,13 @@ Read.aligned(file)
 The file has to be in format .fasta}
 
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{
 ReadSequence, ReadTF
 }
 \examples{
-Read.aligned(file="SqDNA.fa")
+pathMEET<-system.file("data",package="MEET")
+Read.aligned(file=paste(pathMEET,"AP1.fa",sep="/"))
 }

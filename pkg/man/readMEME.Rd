@@ -28,7 +28,7 @@ Bailey, T.L., and Elkan, C.: MEME:discovering and analizing DNA and protein sequ
 
 }
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{

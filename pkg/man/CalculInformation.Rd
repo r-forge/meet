@@ -29,7 +29,7 @@ matriu_inf: a matrix with a first row that is the information content in each po
 T. D. Schneider, G. Stormo, L. Gold, and A. Ehrenfeuch, “The infor- mation content of binding sites on nucleotide sequences,” J. Mol. Biol., vol. 188, pp. 415–431, Nov. 1986.
 }
 \author{
-Erola Pairó <epeiro@ibec.pcb.ub.es>
+Erola Pairó <epairo@ibecbarcelona.eu>
 }
 
 \seealso{

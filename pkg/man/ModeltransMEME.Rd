@@ -11,7 +11,7 @@ ModeltransMEME(iicc)
 }
 
 \author{
-Joan Maynou <joan.maynou@upc.edu> and Erola Pairó <epeiroibec.pcb.ub.es>
+Joan Maynou <joan.maynou@upc.edu> and Erola Pairó <epairo@ibecbarcelona.eu>
 }
 \examples{
 data(iicc)

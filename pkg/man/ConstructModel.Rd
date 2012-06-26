@@ -17,10 +17,11 @@ ConstructModel(iicc, TF)
 \details{This function has two output: validation scores and ROC curve.}
 
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>}
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 \seealso{
 MEET, detection}
 \examples{
 data(iicc)
-ConstructModel(iicc,TF="SqDNA.fa")}
+system.file("data",package="MEET")
+ConstructModel(iicc,TF=paste(pathMEET,"DNAmeet.afa",sep="/"))}
 

@@ -27,6 +27,7 @@ kfold.Entropy, kfold.MEME, kfold.MDscan, kfold.MATCH and kfold.PCA
 }
 \examples{
 data(iicc)
-kfold.Divergence(iicc,TF="SqDNA.fa")
+pathMEET<-system.file("data",package="MEET")
+kfold.Divergence(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))
 }
 

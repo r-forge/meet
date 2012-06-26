@@ -17,14 +17,15 @@ T. Bailey and C. Elkan, “Fitting a mixture model by expectation maximization t
 
 }
 \author{
-Erola Pairó <epeiroibec.pcb.ub.es> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 \seealso{align.clustalw, align.MUSCLE}
 \examples{
-iicc<-vector(mode="list", length=4)
+iicc<-vector(mode="list",length=4)
 iicc$nummotif<-c(1,2)
 iicc$lenmotif<-c(10,11,12)
 iiccs$call.meme<-"./meme"
-align.MEME(filein="SqDNA.fa",fileout="Sq.fa",iicc)
+pathMEET<-system.file("data",package="MEET")
+align.MEME(filein=paste(pathMEET,"AP1.fa",sep="/"),fileout="Sq.fa",iicc)
 }
 
