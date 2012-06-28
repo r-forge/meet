@@ -4,7 +4,7 @@ Title: MEET: Motif Elements Estimation Toolkit
 Version: 5.1
 Date: 2010-07-19
 Author: Erola Pairo and Joan Maynou.
-Maintainer: Erola Pairo <epairo@ibrcbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Maintainer: Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 Description: MEET is an R-package that includes a set of models and tools for the detection of cis-regulatory sequences.  The MEET models library is a highly accurate 
 
 License: GPL(>=2)
