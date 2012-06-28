@@ -13,9 +13,9 @@ kfold.Entropy <-function(iicc,TF){
     x<-x[-iicc$outsequence]
     write.fasta(sequences=x,names=c(1:length(x)),file.out="setTF.fa",open="w")
 	
-    	   print("factor")
+    	  
     factor<-switch(iicc$alignment, "CLUSTALW"=align.clustalw(filein="setTF.fa", fileout="Sq.fa", call=iicc$clustalw), "MUSCLE"=align.muscle(filein="setTF.fa", fileout="Sq.fa", gapopen=iicc$gapopen, maxiters=iicc$maxiters, gapextend=iicc$gapextend, call=iicc$muscle),"MEME"=align.MEME(filein="setTF.fa",fileout="Sq.fa",iicc),"NONE"=Read.aligned("setTF.fa"), stop("Alignment method not included"))
-	   print("factorfet")	
+	  
 	validation.set_x <- iicc$DNAreal
 
     out<-lapply(seq(1, length(iicc$vector), 1), function(r){lapply(seq(1, length(x), 1), function(t){})})
@@ -47,7 +47,7 @@ kfold.Entropy <-function(iicc,TF){
 						 write.fasta(sequences=y,names=c(1:length(x)),file.out="Sq.fa",open="w")
 	  
 						 training.set<-switch(iicc$alignment, "CLUSTALW"=align.clustalw(filein="Sq.fa", fileout="background.fa", call=iicc$call.clustalw), "MUSCLE"=align.muscle(filein="Sq.fa", fileout="background.fa", gapopen=iicc$gapopen, maxiters=iicc$maxiters, gapextend=iicc$gapextend, call=iicc$call.muscle),"MEME"=align.MEME(filein="Sq.fa",fileout="background.fa",iicc),"NONE"=Read.aligned("Sq.fa"), stop("Alignment method not included"))
-	print("aliniat")
+	
 						 zout<-(sapply(X=c(1:(k-ncol(training.set)+1)),
 						       FUN = function(X, training.set, validation.set_x,iicc) {
 							   seq.rand <-validation.set_x[X:(X+ncol(training.set)-1)]
@@ -57,7 +57,7 @@ kfold.Entropy <-function(iicc,TF){
 	  unlist(out[[i]])
 	  
 	})
-	
+
 return(Resultats)
     }
 

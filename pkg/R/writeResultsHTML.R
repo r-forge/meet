@@ -1,4 +1,7 @@
 writeResultsHTML <- function(resultsMEET, fileName='index.html') {
+  if (resultsMEET$Summary$mode != 'detection') {
+    stop(paste('Is not possible to create the HTML file to the ', resultsMEET$Summary$mode, ' mode', sep=''))
+  }
   require(MEET)
   require(seqinr)
   require(seqLogo)
@@ -66,19 +69,20 @@ writeResultsHTML <- function(resultsMEET, fileName='index.html') {
   cat(c('</head><body><div id="main" class="inside"><div class="top_menu"><div class="logo"></div></div><div class="container">'), sep="\n")
   cat(c('<div class="tableContainer"><table id="result" class="tablesorter" cellspacing="1" cellpadding="0" border="0"><thead><tr><th class="header">Sequence</th><th class="header">p-value</th><th class="header">Position</th><th class="header">Direction</th></tr></thead><tbody class="scrollContent">'), sep="\n")
   cat(c('</tbody></table></div>'), sep="\n")
-  cat(c('<span id="sequence_result" class="letter" style="display: inline;">', paste(sapply(1:length(resultsMEET$Summary$DNA[[1]]), function(i) { 
+  cat(c('<span id="sequence_result" class="letter" style="display: inline;"><table id="sequence" cellspacing="1" cellpadding="0" border="0"><tbody>', paste(sapply(1:length(resultsMEET$Summary$DNA[[1]]), function(i) { 
     letter <- resultsMEET$Summary$DNA[[1]][i]
+    if ((i-1) %% 60 == 0) {
+      letter <- paste('<tr><td class="sequence_pos">', i, '</td><td>', letter, sep='')
+    }
     if (i %in% results[,1]) {
       pos <- match(i, results[,1])
       letter <- paste("<span id=\"", results[pos,4], results[pos,1], results[pos,3], "\" class=\"mark\" title=\"|<span class=\'tit\'>Organism:</span> <span class=\'res\'>", resultsMEET$Summary$organism, "</span>|<span class=\'tit\'>TF:</span> <span class=\'res\'>", resultsMEET$Summary$nameTF, "</span>|<span class=\'tit\'>Sequence:</span> <span class=\'res\'>", results[pos,4], "</span>|<span class=\'tit\'>p-value:</span> <span class=\'res\'>", results[pos, 2], "</span>|<span class=\'tit\'>Position:</span> <span class=\'res\'>", results[pos, 1], "</span>|<span class=\'tit\'>Direction:</span> <span class=\'res\'>", results[pos, 3], "\"</span>", letter, "</span>", sep='')
     }
     if (i %% 60 == 0) {
-      paste(letter, '\n', sep='')
-    } else {
-      letter
-    }
-  }), collapse=''), '</span>'), sep='\n')
+      letter <- paste(letter, '</td></tr>', sep='')
+    } 
+    letter
+  }), collapse=''), '</tbody></table></span>'), sep='\n')
   cat(c('</div></div><div id="dialog" title="Basic dialog"><img id="consensus" src="', filename, '" style="width:350px" /></div></body></html>'))
   sink()
- # browseURL(paste('file:///', getwd(), fileName, sep='/'))
 }

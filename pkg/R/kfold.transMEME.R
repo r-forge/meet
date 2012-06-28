@@ -77,7 +77,6 @@ function(iicc,TF) {
   		      }
   	}
  	
-    
-	return(MEME_logthresholds)
+   	return(MEME_logthresholds)
  }
 
