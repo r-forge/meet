@@ -25,7 +25,7 @@ iicc<-vector(mode="list",length=4)
 iicc$nummotif<-c(1,2)
 iicc$lenmotif<-c(10,11,12)
 iiccs$call.meme<-"./meme"
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 align.MEME(filein=paste(pathMEET,"AP1.fa",sep="/"),fileout="Sq.fa",iicc)
 }
 

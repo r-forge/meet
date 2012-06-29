@@ -39,7 +39,7 @@ Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 align.clustalw, align.MEME
 }
 \examples{
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 align.muscle(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa", gapen=-12, maxiters=16, gapextend=-1, call="muscle")
 }
 

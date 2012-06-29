@@ -1,10 +1,10 @@
 \name{run.read.MDscan}
 \alias{run.read.MDscan}
 \title{
-Run and read MDscan on validation 
+Run and read MDscan on training 
 }
 \description{
-This function runs and reads MDscan on validation mode.}
+This function runs and reads MDscan on training mode.}
 \usage{
 run.read.MDscan(input, k, len_motif, num_motif,call.MDscan)
 }

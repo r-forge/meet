@@ -18,6 +18,6 @@ J. Thompson, D. Higgins, and T. Gibson, “Clustal w: improving the sensitivity 
 \author{Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>.}
 \seealso{align.MEME, align.MUSCLE}
 \examples{
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 align.clustalw(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa",call=call.clustalw)}
 

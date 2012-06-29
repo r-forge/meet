@@ -8,8 +8,8 @@ ROCmodel(Scores, labels, iicc)
 }
 
 \arguments{
-  \item{Scores}{Output Scores validation}
-  \item{labels}{Output Labels validation}
+  \item{Scores}{Output Scores training}
+  \item{labels}{Output Labels training}
   \item{iicc}{ Set of initial conditions for the MEET-package: mode, method, background,alignment,threshold,parameters,Transcriptionfactor,nummotif,lenmotif,sentit,position,missing,vector,gapopen,maxiters,gapextend.}
 }
 \details{

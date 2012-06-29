@@ -1,7 +1,7 @@
 \name{ModelPCA}
 \alias{ModelPCA}
 \title{ PCA model for a set of TFBS}
-\description{Performs a principal components analysis of the input DNA aligned sequences. It can be used to construct a model with the number of components chosen using the validation method, or the number of components entered by the user. The PCA model for the aligned sequences, and the parameters to calculate the Q-residuals statistics are returned.}
+\description{Performs a principal components analysis of the input DNA aligned sequences. It can be used to construct a model with the number of components chosen using the training method, or the number of components entered by the user. The PCA model for the aligned sequences, and the parameters to calculate the Q-residuals statistics are returned.}
 \usage{ModelPCA(iicc)}
 
 \arguments{

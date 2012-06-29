@@ -14,7 +14,7 @@ Joan Maynou <joan.maynou@upc.edu> and Erola Pairó  <epairo@ibecbarcelona.eu>
 }
 \examples{
 data(iicc)
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 Alignment(TF=paste(pathMEET,"AP1.fa",sep="/"),iicc)
 }
 

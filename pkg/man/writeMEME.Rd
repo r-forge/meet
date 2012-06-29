@@ -13,7 +13,7 @@ writeMEME(matriu, m)
 
 \arguments{
   \item{matriu}{A set of aligned nucleotide sequences}
-  \item{m}{Number of TFBS sequence used on leave-one-out cross-validation}
+  \item{m}{Number of TFBS sequence used on leave-one-out cross-training}
 }
 
 

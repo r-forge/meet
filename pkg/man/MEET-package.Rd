@@ -25,7 +25,7 @@ LazyLoad: \tab yes\cr
   \item{method}{A set of motif discovery algorithms}
   \item{system}{Training or detection}
   \item{org}{Background organism}
-  \item{vector}{ A set of Rényi Order (ITEME method) for leave-one-out cross-validation}
+  \item{vector}{ A set of Rényi Order (ITEME method) for leave-one-out cross-training}
   \item{num_motif}{Number of motif}
   \item{len_motif}{Length of motif}
   \item{direction}{Forward, reverse or both}

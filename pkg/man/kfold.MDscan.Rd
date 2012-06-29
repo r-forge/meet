@@ -1,10 +1,10 @@
 \name{kfold.MDscan}
 \alias{kfold.MDscan}
 \title{
-Leave-one-out cross-validation for MDscan.
+Leave-one-out cross-training for MDscan.
 }
 \description{
-Given a training sequence set, the optimal length and number motif has been estimated by means of leave-one-out cross-validation from length and number motif set.  From each value, the ROC curve has been calculated.  From this results, the optimal value has been considered according to the area under conver surface maximum
+Given a training sequence set, the optimal length and number motif has been estimated by means of leave-one-out cross-training from length and number motif set.  From each value, the ROC curve has been calculated.  From this results, the optimal value has been considered according to the area under conver surface maximum
 }
 \usage{
 kfold.MDscan(iicc, TF)

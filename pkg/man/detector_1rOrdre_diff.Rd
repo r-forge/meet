@@ -34,7 +34,7 @@ data(BackgroundOrganism)
 
 training.set<-TranscriptionFactor
 k<-1000
-validation.set_x<-sample(c('A','T','C','G'),k, replace=TRUE,Prob)
+training.set_x<-sample(c('A','T','C','G'),k, replace=TRUE,Prob)
 iicc$parameters<-q
 iicc$correction_1rOrdre <- correction.entropy(q,length(training.set),1,Prob)
 iicc$Herror<-slot(iicc$correction_1rOrdre,"Herror")
@@ -43,10 +43,10 @@ iicc$Redundancia_corregida<-CalculRedundancy(training.set,Prob,q,iicc$Herror,iic
 iicc$ErrorHX<-iicc$HXmax-slot(iicc$correction_1rOrdre,"Herror")[length(training.set)]
 
 Resultat<-(sapply(X=c(1:(k-ncol(training.set)+1)),
-            FUN = function(X, training.set, validation.set_x,iicc) {
-       	    seq.rand <-validation.set_x[X:(X+ncol(training.set)-1)]
+            FUN = function(X, training.set, training.set_x,iicc) {
+       	    seq.rand <-training.set_x[X:(X+ncol(training.set)-1)]
 	    detector_1rOrdre_diff(training.set=training.set, val.set= seq.rand,
  	    iicc)}, training.set=training.set, iicc=iicc,
-	     validation.set_x=validation.set_x))
+	     training.set_x=training.set_x))
 }
 

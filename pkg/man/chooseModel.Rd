@@ -21,7 +21,7 @@ y: list with the best parameter and the index of the position of this parameter 
 Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 
 \seealso{
-MEET, validation}
+MEET, training}
 \examples{
 data(iicc)
 detection(iicc)}

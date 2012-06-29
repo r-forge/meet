@@ -10,7 +10,7 @@ read.mast(input, Factortrans, k, m)
   \item{input}{ Output MAST}
   \item{Factortrans}{A set of aligned nucleotide sequences}
   \item{k}{Length DNA candidate sequence}
-  \item{m}{Number of TFBS sequence used on leave-one-out cross-validation}
+  \item{m}{Number of TFBS sequence used on leave-one-out cross-training}
 }
 
 \author{

@@ -14,7 +14,7 @@ ConstructModel(iicc, TF)
   \item{TF}{A set of nucleotide sequences}
 }
 
-\details{This function has two output: validation scores and ROC curve.}
+\details{This function has two output: training scores and ROC curve.}
 
 \author{
 Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
@@ -22,6 +22,6 @@ Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 MEET, detection}
 \examples{
 data(iicc)
-system.file("data",package="MEET")
+system.file("inst/exdata",package="MEET")
 ConstructModel(iicc,TF=paste(pathMEET,"DNAmeet.afa",sep="/"))}
 

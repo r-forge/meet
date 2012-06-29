@@ -16,7 +16,7 @@ MEET(TF, seqin, alg, method, system, org, vector, num_motif, len_motif, directio
   \item{method}{A set of motif discovery algorithms}
   \item{system}{Training or detection}
   \item{org}{Background organism}
-  \item{vector}{Characteristic parameters methodfor leave-one-out cross-validation.}
+  \item{vector}{Characteristic parameters methodfor leave-one-out cross-training.}
   \item{num_motif}{Number of motif}
   \item{len_motif}{Length of motif}
   \item{direction}{Forward, reverse or both}

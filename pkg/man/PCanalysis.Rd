@@ -42,7 +42,7 @@ PCA, kfold.PCA
 \examples{
 data(TranscriptionFactor)
 data(BackgroundOrganism)
-data(numericalDNA)
+data(numericalTF)
 nPCs<-3
 numericalData<-convertDNA(TranscriptionFactor, BackgroundOrganism)
 

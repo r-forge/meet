@@ -2,10 +2,10 @@
 \alias{kfold.PredictInformationTheory}
 
 \title{
-Leave-one-out cross-validation for Rényi entropy (ITEME)
+Leave-one-out cross-training for Rényi entropy (ITEME)
 }
 \description{
-Given a training sequence set, the optimal value for Rényi entropy has been estimated by means of leave-one-out cross-validation from q-value set. For each q-value, the ROC curve has been calculated. From this results, the optimal q-value has been considered according to the area under convex surface maximum.
+Given a training sequence set, the optimal value for Rényi entropy has been estimated by means of leave-one-out cross-training from q-value set. For each q-value, the ROC curve has been calculated. From this results, the optimal q-value has been considered according to the area under convex surface maximum.
 }
 \usage{
 kfold.PredictInformationTheory(iicc, TF)

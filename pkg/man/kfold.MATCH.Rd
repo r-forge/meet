@@ -2,10 +2,10 @@
 \alias{kfold.MATCH}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-MATCH validation process
+MATCH training process
 }
 \description{
-For a vector of Core cut values this function calculates returns a matrix of Similarities and labels indicating if a sequence position is a binding site or not. To calculate the Similartiy a leave-one-out cross validation model is used. With the utput of this function a ROC curve can be calculated for each Core Similarity and the results can be compared.
+For a vector of Core cut values this function calculates returns a matrix of Similarities and labels indicating if a sequence position is a binding site or not. To calculate the Similartiy a leave-one-out cross training model is used. With the utput of this function a ROC curve can be calculated for each Core Similarity and the results can be compared.
 }
 \usage{
 kfold.MATCH(iicc, Seqin)
