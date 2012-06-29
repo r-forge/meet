@@ -1,12 +1,12 @@
-\name{organism}
+\name{iicc}
 \docType{data}
-\alias{organism}
-\title{Matrix of background frequencies}
+\alias{initial conditions}
+\title{Initial conditions for the MEET package}
 \description{
-	Background frequencies of each of the nucleotides for all the available organisms
+list with the basic initial conditions needed to run the MEET package. e.g.: the alignment method, the algorithm, the training mode, etc  
 }
-\usage{organism}
-\format{Matrix}
+\usage{iicc}
+\format{List}
 \keyword{datasets}
 \references{
 W. W. Wasserman and A. Sandelin, “Applied bioinformatics for the identification of regulatory elements,” Nat . Rev. Genet. vol. 5, no. 4, pp. 276–287, Apr. 2004 [Online].Available: http://dx.doi.org/10.1038/ nrg1315

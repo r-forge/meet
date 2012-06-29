@@ -1,11 +1,11 @@
-\name{organism}
+\name{TFlogodds}
 \docType{data}
-\alias{organism}
-\title{Matrix of background frequencies}
+\alias{TFlogodds}
+\title{Logodds for a motif PSSM}
 \description{
-	Background frequencies of each of the nucleotides for all the available organisms
+Logodds of the PSSM of the ROX1 motif, calculated using information theory
 }
-\usage{organism}
+\usage{TFlogodds}
 \format{Matrix}
 \keyword{datasets}
 \references{

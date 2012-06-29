@@ -1,11 +1,11 @@
-\name{organism}
+\name{numericalTF}
 \docType{data}
-\alias{organism}
-\title{Matrix of background frequencies}
+\alias{NumericalTF}
+\title{Matrix of a numerical motif}
 \description{
-	Background frequencies of each of the nucleotides for all the available organisms
+Matrix with a numerical DNA motif.  
 }
-\usage{organism}
+\usage{numericalTF}
 \format{Matrix}
 \keyword{datasets}
 \references{
