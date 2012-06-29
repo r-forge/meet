@@ -38,6 +38,6 @@ This function need the next packages: seqinr, fields, pcaMethods, Matrix, ROCR, 
 
 
 \examples{
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 Detection<-MEET(org="Drosophila melanogaster",nameTF="a1",seqin=paste(pathMEET,"DNAmeet.afa",sep="/"),method="Divergence",mode="detection",threshold=0.001)
 } 

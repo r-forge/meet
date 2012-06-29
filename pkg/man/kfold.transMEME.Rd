@@ -29,6 +29,6 @@ Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 \seealso{MEET, kfold.Entropy, kfold.transMEME,kfoldMEME, kfold.Divergence, kfold.PCA}
 \examples{
 data(iicc)
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 kfold.transMEME(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
 

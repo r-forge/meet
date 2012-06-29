@@ -27,7 +27,7 @@ kfold.Divergence, kfold.Entropy, kfold.MEME, kfold.MATCH and kfold.PCA
 }
 \examples{
 data(iicc)
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 kfold.MDscan(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))
 }
 

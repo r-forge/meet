@@ -29,6 +29,6 @@ Joan Maynou <joan.maynou@upc.edu>
 kfold.PredictDivergence, kfold.PredictInformationTheory, MDscan, kfold.MATCH and kfold.PCA}
 \examples{
 data(iicc)
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 kfold.MEME(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
 

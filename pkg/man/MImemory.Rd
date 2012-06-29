@@ -24,7 +24,7 @@ library(seqinr)
 write.fasta <- get("write.fasta",pos="package:seqinr")
 read.fasta <- get("read.fasta",pos="package:seqinr")
 data(iicc)
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 TF=paste(pathMEET,"AP1.fa",sep="/")
 x<-read.fasta(file=TF)
 m<-1

@@ -17,7 +17,7 @@
 \seealso{MEET, detection}
 
 \examples{
-pathMEET<-system.file("data",package="MEET")
+pathMEET<-system.file("inst/exdata",package="MEET")
 results<-MEET(org="Homo sapiens", nameTF='CREB1', seqin=paste(pathMEET,"DNAmeet.afa",sep="/"), method="Entropy", system="detection", direction="f", threshold=0.01, optionsFile='.optionsmeet')
 writeResultsHTML(results)
 }
