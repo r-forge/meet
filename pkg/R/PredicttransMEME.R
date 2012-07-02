@@ -7,6 +7,7 @@ PredicttransMEME <- function(iicc,TF) {
 
     k<-length(iicc$DNA[[1]])
      threshold<-iicc$threshold
+    len_motif<-ncol(TF)
     output<-lapply(seq(1,length(iicc$DNA), 1), function(x){})
 	for(i in c(1:length(iicc$DNA))){
 		Sequence <- iicc$DNA[[i]]

@@ -1,4 +1,4 @@
-align.clustalw <-function(filein=TF, fileout="Sq.fa", call=call.clustalw){
+align.clustalw <-function(filein, fileout="Sq.fa", call){
 	read.fasta <- get("read.fasta", pos = "package:seqinr")
     strtocall <- paste(call, ' -infile=',filein, ' -outfile=',fileout, ' -output=FASTA', sep='' )
       

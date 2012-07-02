@@ -48,9 +48,10 @@ MEET <-function(TF=NULL,nameTF=NULL,seqin,alg="NONE",method="Qresiduals",mode="t
         }
 
       
-
+      organism<-NULL
       
       data(organism)
+      organism<-organism
           
       write.fasta <- get("write.fasta",pos="package:seqinr")
       read.fasta <- get("read.fasta",pos="package:seqinr")

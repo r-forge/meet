@@ -1,4 +1,4 @@
-align.muscle <-function(filein=TF, fileout="Sq.fa", gapopen=gapopen, maxiters=maxiters, gapextend=gapextend, call=call.muscle){
+align.muscle <-function(filein, fileout="Sq.fa", gapopen, maxiters, gapextend, call){
     read.fasta <- get("read.fasta", pos = "package:seqinr")
 	strtocall <- paste(call, ' -in ',filein ,' -out',fileout,
 				'-maxiters',maxiters,'-diags1',

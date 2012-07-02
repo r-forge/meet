@@ -40,7 +40,7 @@ PredictDivergence <-function(iicc,TF){
 	iicc$interB<-iicc$model$parameterModel$interB
 	iicc$Divergence<-iicc$model$model
    
-	Results<-NULL
+	Results<-seq.rand<-NULL
    	
 	
 	for(i in c(1:length(iicc$DNA))){

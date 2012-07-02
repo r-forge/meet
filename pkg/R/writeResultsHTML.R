@@ -1,10 +1,11 @@
 writeResultsHTML <- function(resultsMEET, fileName='index.html') {
+ require(MEET)
+  require(seqinr)
+  require(seqLogo)
   if (resultsMEET$Summary$mode != 'detection') {
     stop(paste('Is not possible to create the HTML file to the ', resultsMEET$Summary$mode, ' mode', sep=''))
   }
-  require(MEET)
-  require(seqinr)
-  require(seqLogo)
+ 
 
   results <- resultsMEET$Results
   fileName <- 'index.html'

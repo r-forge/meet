@@ -17,7 +17,7 @@ ModelDivergence<-function(iicc){
 		iicc$classentropy<-"Renyi"  
 	}
 	
-	iicc <- detector_2nOrdre_init(training.set, val.set=seq.rand, iicc)
+	iicc <- detector_2nOrdre_init(training.set, val.set=NULL, iicc)
 	memory<-MImemory(iicc,Factortrans)
 	iicc<-c(iicc,memory)
 	

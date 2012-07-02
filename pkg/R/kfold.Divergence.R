@@ -18,7 +18,7 @@ kfold.Divergence <-function(iicc,TF){
     validation.set_x <- iicc$DNAreal
        
     out<-lapply(seq(1, length(iicc$vector), 1), function(r){lapply(seq(1, length(x), 1), function(t){})})
-	
+	seq.rand<-NULL
     
 	Resultats<-lapply(seq(1, length(iicc$vector), 1),function(i){
 					

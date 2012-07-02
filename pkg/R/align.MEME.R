@@ -1,4 +1,4 @@
-align.MEME <-function(filein=TF,fileout="Sq.fa",iicc){
+align.MEME <-function(filein,fileout="Sq.fa",iicc){
 	require("MEET")
 	num_motif<-iicc$nummotif
 	len_motif<-iicc$lenmotif

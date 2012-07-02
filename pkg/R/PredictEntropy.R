@@ -34,7 +34,7 @@ PredictEntropy <-function(iicc){
       out[[i]][1,]<-(sapply(X=c(1:(k-ncol(matriu)+1)),
 		    FUN = function(X, training.set, validation.set_x,iicc) {
 		    seq.rand <-validation.set_x[X:(X+ncol(training.set)-1)]
-			Hread(training.set=training.set,val.set=seq.rand,iicc)			
+			Hread(training.set.mes.rand=training.set,val.set=seq.rand,iicc)			
 		    }, training.set=training.set, iicc=iicc, validation.set_x=validation.set_x))
 		            
       a<-rev(sort(as.vector(t(out[[i]]))))

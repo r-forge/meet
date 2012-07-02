@@ -1,7 +1,7 @@
 PredictMDscan <-function(iicc){
  require("seqinr")
  require("MEET")
-           
+ direction<-iicc$direction          
  write.fasta <- get("write.fasta",pos="package:seqinr")
  read.fasta <- get("read.fasta",pos="package:seqinr")
  call.MDscan<-iicc$MDscan
