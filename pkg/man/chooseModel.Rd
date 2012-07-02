@@ -18,7 +18,7 @@ y: list with the best parameter and the index of the position of this parameter 
 \details{
 	The needed iicc is the vector of parameters to study }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 
 \seealso{
 MEET, training}

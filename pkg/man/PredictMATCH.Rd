@@ -26,7 +26,7 @@ Uses the MATCH constructed motif, and as a parameter the chosen corecut}
 
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>}
+Erola Pairo <epairo@ibecbarcelona.eu>}
 
 \seealso{
 MEET, kfold.MATCH, ModelMATCH}

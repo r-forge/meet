@@ -4,7 +4,7 @@
 Divergencia.Shannon: Mutual Information
 }
 \description{
-This function calculates Mutual Information (Rényi Order equal 1) by means of Kullback-Leibler divergence}
+This function calculates Mutual Information (Renyi Order equal 1) by means of Kullback-Leibler divergence}
 \usage{
 divergence.Shannon(training.set, H, HXY,correction)
 }
@@ -14,9 +14,9 @@ divergence.Shannon(training.set, H, HXY,correction)
   \item{HXY}{Joint Entropy}
   \item{correction}{Correction of the Finite Sample Size Effect}
 }
-\details{Rényi Order has to be equal 1.}
+\details{Renyi Order has to be equal 1.}
 
-\references{ J. Maynou, M. Vallverdú, F. Clarià, J.J. Gallardo-Chacón, P. Caminal and A. Perera," Transcription Factor Binding Site Detection through Position Cross-Mutual Information variability analysis". 31st Annual International Conference of the IEEE Engineering in Medicine and Biology Society.
+\references{ J. Maynou, M. Vallverdu, F. Claria, J.J. Gallardo-Chacon, P. Caminal and A. Perera, Transcription Factor Binding Site Detection through Position Cross-Mutual Information variability analysis. 31st Annual International Conference of the IEEE Engineering in Medicine and Biology Society.
 }
 \author{
 Joan Maynou <joan.maynou@upc.edu>

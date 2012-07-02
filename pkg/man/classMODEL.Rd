@@ -17,7 +17,7 @@ classMODEL(org,method,nameTF)
 \details{
 	The needed iicc is the vector of parameters to study }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 
 \seealso{
 MEET,EntropyDROSOPHILA,EntropyHOMO,EntropyMUS,EntropyRATTUS,DivergenceHOMO,DivergenceMUS,DivergenceRATTUS,DivergenceMUS}

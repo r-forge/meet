@@ -10,7 +10,7 @@ CalculRedundancy(Factortrans, q,iicc)
 }
 \arguments{
   \item{Factortrans}{ A set of aligned nucleotide sequences}
-  \item{q}{Rényi Order}
+  \item{q}{Renyi Order}
   \item{iicc}{A list options}
   
 }
@@ -26,9 +26,12 @@ data(BackgroundOrganism)
 data(RenyiOrder)
 data(iicc)
 Factortrans<-TranscriptionFactor
-correction<-correction.entropy(q,p=nrow(Factortrans),long=1,Prob)
+correction<-correction.entropy(q,p=nrow(Factortrans),long=1,iicc=iicc)
 iicc$Herror<-iicc$HXmax<-iicc<-classentropy<-NULL
 iicc$Herror<-slot(correction,"Herror")
 iicc$classentropy<-"Shannon"
-iicc$HXmax<-H<-switch(iicc$classentropy, "Shannon"=entropy.Shannon(iicc$background),"Renyi"=entropy.Renyi(iicc$background,q))
-CalculRedundancy(Factortrans,q,iicc)}
+training.set<-TranscriptionFactor
+ wind<-probability(training.set,Prob,missing.fun=NULL)
+iicc$HXmax<-H<-switch(iicc$classentropy, "Shannon"=entropy.Shannon(wind),"Renyi"=entropy.Renyi(iicc$background,q))
+CalculRedundancy(Factortrans,q,iicc)
+}

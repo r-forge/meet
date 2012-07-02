@@ -13,11 +13,11 @@ Multiple sequence alignment by means of MEME.}
 	  This funtions works with meme<=4.3.0}
 \value{Output is a file in FASTA format with aligned nucleotide sequences.}
 \references{
-T. Bailey and C. Elkan, “Fitting a mixture model by expectation maximization to discover motifs in biopolymers,” in Proceedings of the Second International Conference on Intelligent Systems for Molecular Biology.	AAAI Press, August 1994, pp. 28–36.
+T. Bailey and C. Elkan, Fitting a mixture model by expectation maximization to discover motifs in biopolymers, in Proceedings of the Second International Conference on Intelligent Systems for Molecular Biology.	AAAI Press, August 1994, 
 
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 \seealso{align.clustalw, align.MUSCLE}
 \examples{
@@ -25,7 +25,7 @@ iicc<-vector(mode="list",length=4)
 iicc$nummotif<-c(1,2)
 iicc$lenmotif<-c(10,11,12)
 iiccs$call.meme<-"./meme"
-pathMEET<-system.file("inst/exdata",package="MEET")
+pathMEET<-system.file("exdata",package="MEET")
 align.MEME(filein=paste(pathMEET,"AP1.fa",sep="/"),fileout="Sq.fa",iicc)
 }
 

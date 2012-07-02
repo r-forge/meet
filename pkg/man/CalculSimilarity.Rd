@@ -21,28 +21,21 @@ minimum score obtained using the PSSM model
 maximum score obtained using the PSSM model
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 similarity: between 0 and 1, similarity of the given sequence to the model
 }
 \references{
-A.E. Kel , E. Gößling , I. Reuter , E. Cheremushkin , O.V. Kel-Margoulis , and E. Wingender
+A.E. Kel , E. Gossling , I. Reuter , E. Cheremushkin , O.V. Kel-Margoulis , and E. Wingender
 MATCHTM: a tool for searching transcription factor binding sites in DNA sequences 
 Nucl. Acids Res. 31: 3576-3579.
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>
+Erola Pairo <epairo@ibecbarcelona.eu>
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+CalculScores
 }
 \examples{
 data(TFlogodds)
@@ -54,8 +47,8 @@ maxim<-0
 minim<-0
 
 for(j in 1:dim(TFlogodds)[1]){
-	  minim <- min(logodds[j,])+minim
-	  maxim <- max(logodds[j,])+maxim
+	  minim <- min(TFlogodds[j,])+minim
+	  maxim <- max(TFlogodds[j,])+maxim
 	  }
 Similarity<-CalculSimilarity(current, minim, maxim)
   }

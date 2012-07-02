@@ -18,7 +18,7 @@ kfold.MEME(iicc, TF)
 This function needs MEME/MAST software.
 }
 \references{
-[5] T. Bailey and C. Elkan, “Fitting a mixture model by expectation maximization to discover motifs in biopolymers,” in Proceedings of the Second International Conference on Intelligent Systems for Molecular Biology.AAAI Press, August 1994, pp. 28–36.
+[5] T. Bailey and C. Elkan, Fitting a mixture model by expectation maximization to discover motifs in biopolymers, in Proceedings of the Second International Conference on Intelligent Systems for Molecular Biology.AAAI Press, August 1994, pp. 28.
 }
 
 \author{
@@ -29,6 +29,6 @@ Joan Maynou <joan.maynou@upc.edu>
 kfold.PredictDivergence, kfold.PredictInformationTheory, MDscan, kfold.MATCH and kfold.PCA}
 \examples{
 data(iicc)
-pathMEET<-system.file("inst/exdata",package="MEET")
+pathMEET<-system.file("exdata",package="MEET")
 kfold.MEME(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
 

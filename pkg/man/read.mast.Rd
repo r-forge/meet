@@ -14,7 +14,7 @@ read.mast(input, Factortrans, k, m)
 }
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 
 \examples{
 data(TranscriptionFactor)

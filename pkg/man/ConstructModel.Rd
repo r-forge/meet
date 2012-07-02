@@ -17,11 +17,12 @@ ConstructModel(iicc, TF)
 \details{This function has two output: training scores and ROC curve.}
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 \seealso{
 MEET, detection}
 \examples{
+
 data(iicc)
-system.file("inst/exdata",package="MEET")
-ConstructModel(iicc,TF=paste(pathMEET,"DNAmeet.afa",sep="/"))}
+pathMEET<-system.file("exdata",package="MEET")
+ConstructModel(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
 

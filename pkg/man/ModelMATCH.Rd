@@ -23,10 +23,10 @@ The specific parameters for this detection are: the transcription factor to mode
   
 }
 \references{
-E. Kel , E. Gößling , I. Reuter , E. Cheremushkin , O.V. Kel-Margoulis , and E. Wingender MATCHTM: a tool for searching transcription factor binding sites in DNA sequences Nucl. Acids Res. 31: 3576-3579.}
+E. Kel , E. Gossling , I. Reuter , E. Cheremushkin , O.V. Kel-Margoulis , and E. Wingender MATCHTM: a tool for searching transcription factor binding sites in DNA sequences Nucl. Acids Res. 31: 3576-3579.}
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>}
+Erola Pairo <epairo@ibecbarcelona.eu>}
 
 \seealso{
 MEET, kfold.MATCH, ModelPCA}

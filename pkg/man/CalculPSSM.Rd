@@ -14,9 +14,7 @@ CalculPSSM(matriu, Prob)
   \item{matriu}{ Set of DNA aligned sequences}
   \item{Prob}{ Probability distribution of the nucleotides in the background model}
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
 logodds: logodds matrix calculated as a log2 of the frequency matrix
 }
@@ -25,7 +23,7 @@ logodds: logodds matrix calculated as a log2 of the frequency matrix
 }
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>
+Erola Pairo <epairo@ibecbarcelona.eu>
 }
 
 

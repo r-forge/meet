@@ -18,18 +18,15 @@ Aligned DNA sequences
 Background Probability for the studied individual. 
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{
 matriu_inf: a matrix with a first row that is the information content in each position and the next ones the logodds matrix using information content.
 
 }
 \references{
-T. D. Schneider, G. Stormo, L. Gold, and A. Ehrenfeuch, “The infor- mation content of binding sites on nucleotide sequences,” J. Mol. Biol., vol. 188, pp. 415–431, Nov. 1986.
+T. D. Schneider, G. Stormo, L. Gold, and A. Ehrenfeuch, The information content of binding sites on nucleotide sequences, J. Mol. Biol., vol. 188,  Nov. 1986.
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>
+Erola Pairo <epairo@ibecbarcelona.eu>
 }
 
 \seealso{

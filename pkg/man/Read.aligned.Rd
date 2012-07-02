@@ -14,13 +14,13 @@ Read.aligned(file)
 The file has to be in format .fasta}
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{
 ReadSequence, ReadTF
 }
 \examples{
-pathMEET<-system.file("inst/exdata",package="MEET")
+pathMEET<-system.file("exdata",package="MEET")
 Read.aligned(file=paste(pathMEET,"AP1.fa",sep="/"))
 }

@@ -23,7 +23,7 @@ QtoJackson(Q,h0, x1, x2, x3)
 }
 
 \author{
-Erola Pairó <epairo@ibec.pcb.ub.es>}
+Erola Pairo <epairo@ibec.pcb.ub.es>}
 \seealso{
 kfold.PCA, Predict.PCA, JacksonParameters
 }

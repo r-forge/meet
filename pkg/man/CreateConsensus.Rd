@@ -26,7 +26,7 @@ SeqCons: Consensus sequence (if gaps a "Na" is returned)
 https://r-forge.r-project.org/projects/seqinr/
 }
 \author{
-Erola Pairó <epeiro@ibec.ub.pcb.es>
+Erola Pairo <epeiro@ibec.ub.pcb.es>
 }
 
 

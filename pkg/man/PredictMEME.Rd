@@ -26,7 +26,7 @@ Uses the MEME constructed motif}
 
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>}
+Erola Pairo <epairo@ibecbarcelona.eu>}
 
 \seealso{
 MEET, kfold.MEME, ModelMEME}

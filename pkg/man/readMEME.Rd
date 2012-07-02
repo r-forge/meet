@@ -24,11 +24,11 @@ This function works with MEME<=4.3.0
 }
 
 \references{
-Bailey, T.L., and Elkan, C.: MEME:discovering and analizing DNA and protein sequence motifs, Nucleic acids research 34, volume 34, W369–W373, 2006
+Bailey, T.L., and Elkan, C.: MEME:discovering and analizing DNA and protein sequence motifs, Nucleic acids research 34, volume 34, W369, 2006
 
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{

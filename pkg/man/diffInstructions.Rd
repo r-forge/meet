@@ -17,7 +17,7 @@ diffInstructions(training.set, HX, HXmax, Herror, Redundancia_corregida)
 \details{This function depends on detector_1erOrdre_diff}
 
 \references{
-J. Maynou, J.-J. Gallardo-Chacon, M. Vallverdu, P. Caminal, and A. Perera, “Computational detection of transcription factor binding sites through differential rényi entropy,” Information Theory, IEEE Transactions on, vol. 56, no. 2, pp. 734 –741, feb. 2010.
+J. Maynou, J.-J. Gallardo-Chacon, M. Vallverdu, P. Caminal, and A. Perera, Computational detection of transcription factor binding sites through differential renyi entropy, Information Theory, IEEE Transactions on, vol. 56, no. 2, pp. 734, feb. 2010.
 }
 
 \author{

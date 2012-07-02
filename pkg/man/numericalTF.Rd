@@ -9,7 +9,7 @@ Matrix with a numerical DNA motif.
 \format{Matrix}
 \keyword{datasets}
 \references{
-W. W. Wasserman and A. Sandelin, “Applied bioinformatics for the identification of regulatory elements,” Nat . Rev. Genet. vol. 5, no. 4, pp. 276–287, Apr. 2004 [Online].Available: http://dx.doi.org/10.1038/ nrg1315
+Silverman, B.D., and Linske, R.: A measure of DNA periodicity, Journal of Theoretical Biology 118, volume 118,p. 295, 1986
 }
 
 

@@ -1,8 +1,8 @@
 \name{divergence.Renyi}
 \alias{divergence.Renyi}
-\title{Rényi divergence}
+\title{Renyi divergence}
 \description{
-This function calculates parametric divergence (Rényi Order different 1)
+This function calculates parametric divergence (Renyi Order different 1)
 }
 \usage{
 divergence.Renyi(training.set, pmX, pmXY, q, correction)
@@ -12,7 +12,7 @@ divergence.Renyi(training.set, pmX, pmXY, q, correction)
   \item{pmX}{ Relative frequency of a nucleotide at a motif position (position independency model) as an estimation of the probability of this fact.}
   \item{pmXY}{To extend to pmX to include of correlated positions (position dependency model)}
  
-  \item{q}{Rényi Order}
+  \item{q}{Renyi Order}
   \item{correction}{Correction of the Finite Sample Size Effect}
 }
 

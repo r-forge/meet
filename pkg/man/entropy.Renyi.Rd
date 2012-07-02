@@ -1,7 +1,7 @@
 \name{entropy.Renyi}
 \alias{entropy.Renyi}
 \title{
-Rényi Entropy 
+Renyi Entropy 
 }
 \description{
 This function calculates the Renyi's entropy of the variable X with N possible states
@@ -12,7 +12,7 @@ entropy.Renyi(wind, q)
 
 \arguments{
   \item{wind}{Probability matrix (4xm).}
-  \item{q}{Rényi Order}
+  \item{q}{Renyi Order}
 }
 \details{ wind parameter is calculated by means of probability function}
 

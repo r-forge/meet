@@ -25,7 +25,7 @@ score: score of the studied sequence
  Gary D. Stormo. DNA binding sites: representation and discovery. Bioinformatics (2000) 16(1): 16-23 doi:10.1093/bioinformatics/16.1.16
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>
+Erola Pairo <epairo@ibecbarcelona.eu>
 }
 
 

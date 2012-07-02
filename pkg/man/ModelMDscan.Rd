@@ -25,7 +25,7 @@ The output is the name of the file where the results are writen}
 
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>}
+Erola Pairo <epairo@ibecbarcelona.eu>}
 
 \seealso{
 MEET, kfold.MDscan}

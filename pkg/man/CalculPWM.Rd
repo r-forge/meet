@@ -12,7 +12,7 @@ This function calculates the PWM (Position Weigth Matrix) from set of aligned nu
 \value{ A matrix of characters}
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \examples{

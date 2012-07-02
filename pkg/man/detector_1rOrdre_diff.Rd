@@ -1,8 +1,8 @@
 \name{detector_1rOrdre_diff}
 \alias{detector_1rOrdre_diff}
-\title{Detection of Transcription Factor Binding Sites Through Differential Rényi Entropy}
+\title{Detection of Transcription Factor Binding Sites Through Differential Renyi Entropy}
 \description{
-This detection algorithm is based on Information Theory.  Specifically, entropy algorithm uses a parametric uncertainty measurement called Rényi entropy.  This computational method evaluates the variation on the total Rényi entropy of a set of sequences when a candidate sequence is assumed to be a a true binding site belonging to the set.The measurement of the variation of the total redundancy when the candidate sequence is added to the set has been computed by using the difference between the redundancy profile. This technique assumes independecy between positions in the binding sequence. 
+This detection algorithm is based on Information Theory.  Specifically, entropy algorithm uses a parametric uncertainty measurement called Renyi entropy.  This computational method evaluates the variation on the total Renyi entropy of a set of sequences when a candidate sequence is assumed to be a a true binding site belonging to the set.The measurement of the variation of the total redundancy when the candidate sequence is added to the set has been computed by using the difference between the redundancy profile. This technique assumes independecy between positions in the binding sequence. 
 }
 \usage{
 detector_1rOrdre_diff(training.set, val.set, iicc)
@@ -18,7 +18,7 @@ detector_1rOrdre_diff(training.set, val.set, iicc)
 		 Sample Size Effect(correction, Redundancia_corregida, Herror and		  ErrorHX)}
 
 \references{
-J. Maynou, J.-J. Gallardo-Chacon, M. Vallverdu, P. Caminal, and A. Perera, “Computational detection of transcription factor binding sites through differential rényi entropy,” Information Theory, IEEE Transactions on, vol. 56, no. 2, pp. 734 –741, feb. 2010.
+J. Maynou, J.-J. Gallardo-Chacon, M. Vallverdu, P. Caminal, and A. Perera, Computational detection of transcription factor binding sites through differential rényi entropy, Information Theory, IEEE Transactions on, vol. 56, no. 2, pp. 734, feb. 2010.
 }
 \author{
 Joan Maynou <joan.maynou@upc.edu>

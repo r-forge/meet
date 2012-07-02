@@ -1,11 +1,11 @@
-\name{diff.instructions}
-\alias{diff.instructions}
+\name{diff.ructions}
+\alias{diff.ructions}
 \title{The measurement of the variation of the total redundancy
 }
 \description{
 This function measures the variation of the total redundancy.}
 \usage{
-diff.instructions(training.set, HX, HXmax, Herror, Redundancia_corregida)
+diff.ructions(training.set, HX, HXmax, Herror, Redundancia_corregida)
 }
 \arguments{
   \item{training.set}{A set of aligned nucleotide sequences}
@@ -17,7 +17,7 @@ diff.instructions(training.set, HX, HXmax, Herror, Redundancia_corregida)
 \details{This function depends on detector_1erOrdre_diff}
 
 \references{
-J. Maynou, J.-J. Gallardo-Chacon, M. Vallverdu, P. Caminal, and A. Perera, “Computational detection of transcription factor binding sites through differential rényi entropy,” Information Theory, IEEE Transactions on, vol. 56, no. 2, pp. 734 –741, feb. 2010.
+J. Maynou, J.-J. Gallardo-Chacon, M. Vallverdu, P. Caminal, and A. Perera, Computational detection of transcription factor binding sites through differential renyi entropy, Information Theory, IEEE Transactions on, vol. 56, no. 2, pp. 734, feb. 2010.
 }
 
 \author{
@@ -37,5 +37,5 @@ HXmax<-entropy.max(Prob,q)
 prob<-probability(training.set,Prob,missing.fun=NULL)
 HX<-entropy(prob,q)
 Redundancia_corregida<-CalculRedundancy(training.set,Prob,q,Herror,HXmax)
-diff.instructions (training.set,HX,HXmax,Herror,Redundancia_corregida)}
+diff.ructions (training.set,HX,HXmax,Herror,Redundancia_corregida)}
 

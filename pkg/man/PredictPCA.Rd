@@ -15,10 +15,10 @@ The specific options for this program are the model constructed for the motif, t
 }
 
 \references{
-Stacklies, Wolfram, Redestig, Henning, Scholz, Matthias, Walther, Dirk, and Selbig, Joachim: pcaMethods a bioconductor package providing PCA methods for incomplete data, Bioinformatics 23(9), volume 23, 1164–1167, 2007
+Stacklies, Wolfram, Redestig, Henning, Scholz, Matthias, Walther, Dirk, and Selbig, Joachim: pcaMethods a bioconductor package providing PCA methods for incomplete data, Bioinformatics 23(9), volume 23, 2007
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>
+Erola Pairo <epairo@ibecbarcelona.eu>
 }
 
 \seealso{

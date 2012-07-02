@@ -16,10 +16,10 @@ numericalDNA(background)
 }
 
 \references{
-Silverman, B.D., and Linske, R.: A measure of DNA periodicity, Journal of Theoretical Biology 118, volume 118, 295–300, 1986
+Silverman, B.D., and Linske, R.: A measure of DNA periodicity, Journal of Theoretical Biology 118, volume 118,p. 295, 1986
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>}
+Erola Pairo <epairo@ibecbarcelona.eu>}
 
 \seealso{
 convertDNA

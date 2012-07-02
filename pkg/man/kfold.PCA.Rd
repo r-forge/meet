@@ -10,7 +10,7 @@ kfold.PCA(iicc, TF)
   \item{iicc}{ Options described  in the MEET function}
   \item{TF}{DNA sequences used to construct the motif model}
 }
-\details{ Alignment method has to be installed in your computer. 
+\details{ Alignment method has to be alled in your computer. 
 
 }
 \value{
@@ -20,10 +20,10 @@ As a list, for each nPCs
 }
 \references{
 Jolliffe I.T. Principal Component Analysis, Series: Springer Series in Statistics, 2nd ed., Springer, NY, 2002, XXIX, 487 p. 28 illus. ISBN 978-0-387-95442-4
-Stacklies, Wolfram, Redestig, Henning, Scholz, Matthias, Walther, Dirk, and Selbig, Joachim: pcaMethods a bioconductor package providing PCA methods for incomplete data, Bioinformatics 23(9), volume 23, 1164–1167, 2007
+Stacklies, Wolfram, Redestig, Henning, Scholz, Matthias, Walther, Dirk, and Selbig, Joachim: pcaMethods a bioconductor package providing PCA methods for incomplete data, Bioinformatics 23(9)	, 1164 2007
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>
+Erola Pairo <epairo@ibecbarcelona.eu>
 }
 
 

@@ -3,17 +3,13 @@
 \title{Creates a model class}
 \description{ This function creates a Model class and it should not be used by the user}
 \usage{
-Models(iicc)
+Models()
 }
-
-\arguments{
-\item{ } defines the class
-}
-
 \author{
-Joan Maynou <joan.maynou@upc.edu> and Erola Pairó  <epairo@ibecbarcelona.eu>
+Joan Maynou <joan.maynou@upc.edu> and Erola Pairo  <epairo@ibecbarcelona.eu>
 }
 \examples{
+data(iicc)
 Models()
 }
 

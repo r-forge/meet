@@ -28,18 +28,18 @@ Gapopen and gapextend must be negative. Output is a file in FASTA format with al
 }
 
 \references{
-R. C. Edgar, “MUSCLE: multiple sequence alignment with high accuracy and high throughput.” Nucleic Acids Res, vol. 32, no. 5, pp. 1792–1797, 2004. [Online]. Available: http://dx.doi.org/10.1093/nar/ gkh340
+R. C. Edgar, MUSCLE: multiple sequence alignment with high accuracy and high throughput. Nucleic Acids Res, vol. 32, no. 5, 2004. [Online]. Available: http://dx.doi.org/10.1093/nar/ gkh340
 
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{
 align.clustalw, align.MEME
 }
 \examples{
-pathMEET<-system.file("inst/exdata",package="MEET")
+pathMEET<-system.file("exdata",package="MEET")
 align.muscle(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa", gapen=-12, maxiters=16, gapextend=-1, call="muscle")
 }
 

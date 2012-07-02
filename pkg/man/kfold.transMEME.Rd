@@ -20,15 +20,15 @@ This function needs MEME/MAST software.
 }
 
 \references{
-T. Bailey and C. Elkan, “Fitting a mixture model by expectation max- imization to discover motifs in biopolymers,” in Proc. 2nd Int. Conf. Intelligent Systems for Molecular Biology, Aug. 1994, pp. 28–36.
+T. Bailey and C. Elkan, Fitting a mixture model by expectation max- imization to discover motifs in biopolymers in Proc. 2nd Int. Conf. Intelligent Systems for Molecular Biology, Aug. 1994, pp. 28.
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{MEET, kfold.Entropy, kfold.transMEME,kfoldMEME, kfold.Divergence, kfold.PCA}
 \examples{
 data(iicc)
-pathMEET<-system.file("inst/exdata",package="MEET")
+pathMEET<-system.file("exdata",package="MEET")
 kfold.transMEME(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
 

@@ -15,7 +15,7 @@ correctionaprox(x, matriu, s)
 }
 \details{Sample size has to be > 50.}
 \references{
-T. D. Schneider, G. Stormo, L. Gold, and A. Ehrenfeuch, “The infor- mation content of binding sites on nucleotide sequences,” J. Mol. Biol., vol. 188, pp. 415–431, Nov. 1986.
+T. D. Schneider, G. Stormo, L. Gold, and A. Ehrenfeuch, The information content of binding sites on nucleotide sequences, J. Mol. Biol., vol. 188, Nov. 1986.
 }
 \author{
 Joan Maynou <joan.maynou@upc.edu>

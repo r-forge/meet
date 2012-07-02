@@ -25,12 +25,12 @@ LazyLoad: \tab yes\cr
   \item{method}{A set of motif discovery algorithms}
   \item{system}{Training or detection}
   \item{org}{Background organism}
-  \item{vector}{ A set of Rényi Order (ITEME method) for leave-one-out cross-training}
+  \item{vector}{ A set of Renyi Order (ITEME method) for leave-one-out cross-training}
   \item{num_motif}{Number of motif}
   \item{len_motif}{Length of motif}
   \item{direction}{Forward, reverse or both}
   \item{threshold}{P-value}
-  \item{order}{Rényi Order}
+  \item{order}{Renyi Order}
   \item{position}{Binding site position for training}
   \item{mv}{missing values}
   \item{gapopen}{The gap open score}
@@ -40,7 +40,7 @@ LazyLoad: \tab yes\cr
 }
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \examples{

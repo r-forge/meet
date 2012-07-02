@@ -10,10 +10,10 @@ entropy.joint(pmXY,q,iicc)
 
 \arguments{
   \item{pmXY}{ Joint probability}
-  \item{q}{Rényi Order}
+  \item{q}{Renyi Order}
   \item{iicc}{ A list of options}
 }
-\details{If q is equal 1, Rényi joint entropy converges to Shannon joint entropy}
+\details{If q is equal 1, Renyi joint entropy converges to Shannon joint entropy}
 \author{Joan Maynou <joan.maynou@upc.edu>}
 \seealso{entropy}
 \examples{

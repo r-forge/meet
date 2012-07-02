@@ -18,7 +18,7 @@ detection(iicc)
 	The main parameter is method ( a set of motif discovery algorithms: 
 	ITEME(Entropy, divergence), Q-residuals, MEME, Match and MDscan)}
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 
 \seealso{
 MEET, ConstructModel}

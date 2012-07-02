@@ -27,7 +27,7 @@ Uses the transMEME constructed motif}
 
 
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu>}
+Erola Pairo <epairo@ibecbarcelona.eu>}
 
 \seealso{
 MEET, kfold.transMEME, ModeltransMEME}

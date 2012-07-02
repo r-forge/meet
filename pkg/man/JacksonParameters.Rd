@@ -19,7 +19,7 @@ JacksonParameters(nPCs, TFBS)
 }
 
 \author{
-Erola Pairó <epairo@ibec.pcb.ub.es>}
+Erola Pairo <epairo@ibec.pcb.ub.es>}
 \seealso{
 kfold.PCA, Predict.PCA, QtoJackson
 }

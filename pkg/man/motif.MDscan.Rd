@@ -18,10 +18,10 @@ motif.MDscan(input,Factortrans,k,m)
 }
 
 \references{
-X. S. Liu, D. L. Brutlag, and J. S. Liu, “An algorithm for finding proteindna binding sites with applications to chromatin-immunopre- cipitation microarray experiments,” Nat. Biotechnol. vol. 20, no. 8, pp. 835–839, Aug. 2002 [Online]. Available: http://dx.doi.org/10.1038/ nbt717
+X. S. Liu, D. L. Brutlag, and J. S. Liu, An algorithm for finding proteindna binding sites with applications to chromatin-immunopre- cipitation microarray experiments, Nat. Biotechnol. vol. 20, no. 8, pp. 835, Aug. 2002 [Online]. Available: http://dx.doi.org/10.1038/ nbt717
 }
 \author{
-Erola Pairó <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
+Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
 
 \seealso{
