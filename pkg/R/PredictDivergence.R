@@ -1,4 +1,4 @@
-PredictDivergence <-function(iicc,TF){
+PredictDivergence <-function(iicc){
 
 	require("MEET")
 	require("seqinr")

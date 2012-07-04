@@ -9,8 +9,8 @@ PredictDivergence contains a set of functions for detection of Transcription Fac
 PredictDivergence(iicc, TF)
 }
 \arguments{
-  \item{iicc}{A set of inicial conditions for the MEET-package (mode, method, background, alignment, threshold, parameters, Transcriptionfactor, nummotif, lenmotif, sentit, position, missing, vector, gapopen, maxiters, gapextend)}
-  \item{TF}{A set of nucleotide sequences in FASTA format}
+  \item{iicc}{A set of inicial conditions for the MEET-package (mode, method, background, alignment, threshold, parameters, Transcriptionfactor, nummotif, lenmotif, sentit, position, missing, vector, gapopen, maxiters, gapextend). It should include a constructed model}
+  
 }
 \details{ This function integrates the Mutual Information (Renyi order equal 1) and parametric divergence (Renyi order different 1)
 }
@@ -24,7 +24,8 @@ PredictEntropy, PredictMEME, PredictMDscan, PredictPCA and PredictMATCH
 }
 \examples{
 data(iicc)
-pathMEET<-system.file("exdata",package="MEET")
-PredictDivergence(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))
+iicc$parametersIdeal<-1
+iicc$model<-ModelDivergence(iicc)
+PredictDivergence(iicc)
 }
 
