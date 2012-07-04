@@ -25,9 +25,6 @@ Erola Pairo <epairo@ibecbarcelona.eu>
 PredictPCA, kfold.PCA, MEET, detection}
 \examples{
 data(iicc)
-data(TranscriptionFactor)
-nPCs<-iicc$parametersIdeal
-iicc$pvalor<-0.1
-iicc$parameter<-2
+iicc$parameterIdeal<-2
 TFBSmodel<-ModelPCA(iicc)
 }
