@@ -26,7 +26,7 @@ PredictPCA, kfold.PCA, MEET, detection}
 \examples{
 data(iicc)
 data(TranscriptionFactor)
-nPCs<-iicc$parametersIdeal
+nPCs<-1
 iicc$pvalor<-0.1
 iicc$parameter<-2
 TFBSmodel<-ModelPCA(iicc)

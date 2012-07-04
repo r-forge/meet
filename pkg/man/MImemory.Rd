@@ -26,7 +26,7 @@ read.fasta <- get("read.fasta",pos="package:seqinr")
 data(iicc)
 pathMEET<-system.file("exdata",package="MEET")
 TF=paste(pathMEET,"AP1.fa",sep="/")
-x<-read.fasta(file=TF)
+x<-read.fasta(file=TF, set.attributes=FALSE)
 m<-1
 if (iicc$alignment!="NONE"){ 	
    y<-x[-m]
@@ -36,7 +36,7 @@ if (iicc$alignment!="NONE"){
 		factor<-factor[[1]]
 		}
 }else{
-	x<-factor[-m,]
+	x<-x[-m,]
 	training.set<-x
 }
 iicc <- detector_2nOrdre_init(training.set, val.set=seq.rand, iicc,i)
