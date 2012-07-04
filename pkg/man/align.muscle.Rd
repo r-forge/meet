@@ -7,7 +7,7 @@ Multiple sequence alignment by means of Muscle (MUltiple Sequence Comparison by 
  DNA sequences are aligned by means of Muscle Version 3.8. (Multiple Sequences Alignment)
 }
 \usage{
-align.muscle(filein = TF, fileout = "Sq.fa", gapopen = gapopen, maxiters = maxiters, gapextend = gapextend, call=call.muscle)
+align.muscle(filein, fileout = "Sq.fa", gapopen , maxiters, gapextend , call)
 }
 \arguments{
   \item{filein}{

@@ -39,7 +39,7 @@ library("MEET")
 	 Background<-sapply(X=c(1:(length(DNA)-ncol(Factortrans)+1)), FUN=function(X, Factortrans){DNA[X:(X+ncol(Factortrans)-1)]}, Factortrans=Factortrans)
 	Background<-t(Background)
 	
-	logodds <- calculInformacio(training.set, Prob=Prob)
+	logodds <- CalculInformation(training.set, Prob=Prob)
 	vector_informacio <- as.vector(logodds[,1])
 	inf <- vector(mode='logical', length=(length(vector_informacio)-4))
 	for (j in 1:(length(vector_informacio)-4)){

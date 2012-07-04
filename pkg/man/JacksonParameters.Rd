@@ -26,6 +26,7 @@ kfold.PCA, Predict.PCA, QtoJackson
 \examples{
 data(TranscriptionFactor)
 data(iicc)
+nPCs<-1
 TFBS<-iicc$Transcriptionfactor
      Prob<-iicc$background
     missing<-iicc$missing

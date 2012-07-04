@@ -28,5 +28,5 @@ X. S. Liu, D. L. Brutlag, and J. S. Liu, An algorithm for finding proteindna bin
 \examples{
 data(iicc)
 run.read.MDscan(input=iicc$DNA,k=length(iicc$DNA),
-len_motif=c(10,11,12), num_motif=2. call.MDscan)}
+len_motif=c(10,11,12), num_motif=2, call.MDscan)}
 

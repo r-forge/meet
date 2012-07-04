@@ -1,11 +1,12 @@
-\name{organism}
+\name{BackgroundOrganism}
 \docType{data}
-\alias{organism}
+\alias{Backgroundorganism}
 \title{Matrix of background frequencies}
 \description{
 	Background frequencies of each of the nucleotides for all the available organisms
 }
-\usage{organism}
+
+\usage{Prob}
 \format{Matrix}
 \keyword{datasets}
 \references{

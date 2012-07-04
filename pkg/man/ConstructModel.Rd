@@ -21,7 +21,6 @@ Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 \seealso{
 MEET, detection}
 \examples{
-
 data(iicc)
 pathMEET<-system.file("exdata",package="MEET")
 ConstructModel(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}

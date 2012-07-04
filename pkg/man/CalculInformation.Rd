@@ -34,11 +34,10 @@ Erola Pairo <epairo@ibecbarcelona.eu>
 kfold.MATCH, CalculScores.
 }
 \examples{
+library(MEET)
 data(TranscriptionFactor)
 data(BackgroundOrganism)
 CalculInformation(matriu=TranscriptionFactor, Prob=Prob)
-
-
   }
 
 

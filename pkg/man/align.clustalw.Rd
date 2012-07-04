@@ -3,7 +3,7 @@
 \title{Multiple sequence alignment by means of ClustalW}
 \description{ DNA sequences are aligned by means of ClustalW (Multiple Sequence Alignment).}
 \usage{
-align.clustalw(filein = TF, fileout = "Sq.fa", call=call.clustalw)
+align.clustalw(filein , fileout = "Sq.fa", call)
 }
 \arguments{
   \item{filein}{ A set of nucleotide sequences in FASTA format.}

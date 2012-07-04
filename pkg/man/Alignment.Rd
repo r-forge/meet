@@ -13,6 +13,7 @@
 Joan Maynou <joan.maynou@upc.edu> and Erola Pairo  <epairo@ibecbarcelona.eu>
 }
 \examples{
+require(MEET)
 data(iicc)
 pathMEET<-system.file("exdata",package="MEET")
 Alignment(TF=paste(pathMEET,"AP1.fa",sep="/"),iicc)

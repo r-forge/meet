@@ -1,6 +1,6 @@
 \name{Sequence}
 \docType{data}
-\alias{sequence}
+\alias{Sequence}
 \title{Sequence of a DNA motif}
 \description{
 Sequence of a DNA ROX1 binding site.

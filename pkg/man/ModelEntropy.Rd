@@ -15,6 +15,7 @@ Joan Maynou <joan.maynou@upc.edu>
 }
 \examples{
 data(iicc)
+iicc$parametersIdeal<-1
 ModelEntropy(iicc)
 }
 

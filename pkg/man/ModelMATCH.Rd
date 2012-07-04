@@ -34,7 +34,6 @@ MEET, kfold.MATCH, ModelPCA}
 data(iicc)
 data(TranscriptionFactor)
 iicc$method<-"MATCH"
-
 iicc$pvalor<-0.8
 iicc$parameter<-60
 ModelMATCH(iicc)

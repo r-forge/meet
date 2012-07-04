@@ -1,11 +1,11 @@
 \name{RenyiOrder}
 \docType{data}
-\alias{Order}
+\alias{RenyiOrder}
 \title{Renyi entropy and Divergence order}
 \description{
 parameter q, needed to calculate the Renyi Entropy and the Divergence
 }
-\usage{RenyiOrder}
+\usage{q}
 \format{number}
 \keyword{datasets}
 \references{

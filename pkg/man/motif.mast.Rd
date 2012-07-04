@@ -3,7 +3,7 @@
 \title{Read output mast}
 \description{This function reads the output of MAST}
 \usage{
-read.mast(input, Factortrans, k, m)
+motif.mast(input, Factortrans, k, m)
 }
 
 \arguments{
@@ -20,4 +20,4 @@ Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 data(TranscriptionFactor)
 data(iicc)
 Factortrans<-TranscriptionFactor
-read.mast(input,Factortrans,k=length(iicc$DNA),m=1)}
+motif.mast(input,Factortrans,k=length(iicc$DNA),m=1)}

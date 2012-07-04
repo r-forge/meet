@@ -1,4 +1,4 @@
-probability <-function(wind,Prob,missing.fun=NULL){
+probability <-function(wind,Prob,missing.fun){
 
 pm<-apply(wind,2,function (x){
 	resum<-table(x)
@@ -9,6 +9,6 @@ pm<-apply(wind,2,function (x){
 	if(is.na(R)) R <- 0
 	prepm<-missing.fun(x,symbols,R,Prob)
 	prepm})
-pm
+return(pm)
 }
 

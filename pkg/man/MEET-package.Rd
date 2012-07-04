@@ -1,6 +1,5 @@
 \name{MEET-package}
 \alias{MEET-package}
-\alias{MEET}
 \docType{package}
 \title{MEET: Motif Elements Estimation Toolkit}
 \description{
@@ -38,12 +37,11 @@ LazyLoad: \tab yes\cr
   \item{gapextend}{The gap extend score}
  
 }
-
 \author{
 Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 }
-
 \examples{
-
-pathMEET<-system.file("data",package="MEET")
-TrainingResult<-MEET(TF=paste(pathMEET,"AP1.fa",sep="/"), seqin=paste(pathMEET,"DNAhomo.fa",sep="/"),alg="NONE",mode="training",org="Homo sapiens", method="Qresiduals",vector=c(1:8)) }
+library(MEET)
+pathMEET<-system.file("exdata",package="MEET")
+Detection<-MEET(org="Drosophila melanogaster",nameTF="a1",seqin=paste(pathMEET,"DNAmeet.afa",sep="/"),method="Divergence",mode="detection",threshold=0.001,optionsFile='.optionsmeet')
+}

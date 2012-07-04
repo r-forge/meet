@@ -18,7 +18,7 @@ detector_1rOrdre_diff(training.set, val.set, iicc)
 		 Sample Size Effect(correction, Redundancia_corregida, Herror and		  ErrorHX)}
 
 \references{
-J. Maynou, J.-J. Gallardo-Chacon, M. Vallverdu, P. Caminal, and A. Perera, Computational detection of transcription factor binding sites through differential rényi entropy, Information Theory, IEEE Transactions on, vol. 56, no. 2, pp. 734, feb. 2010.
+J. Maynou, J.-J. Gallardo-Chacon, M. Vallverdu, P. Caminal, and A. Perera, Computational detection of transcription factor binding sites through differential renyi entropy, Information Theory, IEEE Transactions on, vol. 56, no. 2, pp. 734, feb. 2010.
 }
 \author{
 Joan Maynou <joan.maynou@upc.edu>
@@ -41,7 +41,7 @@ iicc$Herror<-slot(iicc$correction_1rOrdre,"Herror")
 iicc$HXmax<-entropy.max(Prob,q)
 iicc$Redundancia_corregida<-CalculRedundancy(training.set,Prob,q,iicc$Herror,iicc$HXmax)
 iicc$ErrorHX<-iicc$HXmax-slot(iicc$correction_1rOrdre,"Herror")[length(training.set)]
-
+seq.rand<-NULL
 Resultat<-(sapply(X=c(1:(k-ncol(training.set)+1)),
             FUN = function(X, training.set, training.set_x,iicc) {
        	    seq.rand <-training.set_x[X:(X+ncol(training.set)-1)]

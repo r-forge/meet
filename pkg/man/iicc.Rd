@@ -1,6 +1,5 @@
 \name{iicc}
-\docType{data}
-\alias{initial conditions}
+\alias{iicc}
 \title{Initial conditions for the MEET package}
 \description{
 list with the basic initial conditions needed to run the MEET package. e.g.: the alignment method, the algorithm, the training mode, etc  

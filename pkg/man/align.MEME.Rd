@@ -3,7 +3,7 @@
 \title{
 Multiple sequence alignment by means of MEME.}
 \description{ DNA sequences are aligned by means of MEME Version 4.4.0. (Multiple Expectation-Maximization for Motif Elicitation)}
-\usage{align.MEME(filein = TF, fileout = "Sq.fa", iicc)}
+\usage{align.MEME(filein, fileout = "Sq.fa", iicc)}
 \arguments{
   \item{filein}{ A set of nucleotide sequences in FASTA format.}
   \item{fileout}{ Output file in FASTA format}
