@@ -25,11 +25,9 @@ Erola Pairo <epairo@ibecbarcelona.eu>
 ModelPCA, biol.PCA, MEET, detection}
 \examples{
 data(iicc)
-data(TranscriptionFactor)
 iicc$method<-"PCA"
-
-iicc$pvalor<-0.1
-iicc$parameter<-2
-TFBSmodel<-ModelPCA(iicc)
+iicc$parameterIdeal<-2
+iicc$model<-ModelPCA(iicc)
+iicc$threshold<-0.1
 DetectedSequences<-PredictPCA(iicc)
 }

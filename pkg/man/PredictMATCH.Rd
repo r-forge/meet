@@ -34,8 +34,8 @@ MEET, kfold.MATCH, ModelMATCH}
 data(iicc)
 data(TranscriptionFactor)
 iicc$method<-"MATCH"
-iicc$parametersIdeal<-iicc$parameters
-ModelTFBs<-ModelMATCH(iicc)
+iicc$parametersIdeal<-0.8
+iicc$model<-ModelMATCH(iicc)
 DetectedSequences<-PredictMATCH(iicc)
 
 }

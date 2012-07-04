@@ -6,7 +6,7 @@ A set of functions for detection of Transcription Factor Binding Sites by means 
 PredictDivergence contains a set of functions for detection of Transcription Factor Binding sites through parametric divergence.  This algorithm evaluates the variation on the total Renyi entropy of a set of sequences assuming correlation between positions in the bindng sequence.  
 }
 \usage{
-PredictDivergence(iicc, TF)
+PredictDivergence(iicc)
 }
 \arguments{
   \item{iicc}{A set of inicial conditions for the MEET-package (mode, method, background, alignment, threshold, parameters, Transcriptionfactor, nummotif, lenmotif, sentit, position, missing, vector, gapopen, maxiters, gapextend). It should include a constructed model}
