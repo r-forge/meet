@@ -31,10 +31,8 @@ Erola Pairo <epairo@ibecbarcelona.eu>}
 \seealso{
 MEET, kfold.MDscan, ModelMDscan}
 \examples{
+##not Run
 data(iicc)
 data(TranscriptionFactor)
-iicc$method<-"MDscan"
-ModelTFBs<-ModelMDscan(iicc)
-DetectedSequences<-PredictMDscan(iicc)
-
+#DetectedSequences<-PredictMDscan(iicc)
 }

@@ -34,7 +34,7 @@ MEET, kfold.MEME, ModelMEME}
 data(iicc)
 data(TranscriptionFactor)
 iicc$method<-"MEME"
-ModelTFBs<-ModelMEME(iicc)
-DetectedSequences<-PredictMEME(iicc)
+#ModelTFBs<-ModelMEME(iicc)
+#DetectedSequences<-PredictMEME(iicc)
 
 }
