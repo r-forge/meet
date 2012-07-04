@@ -1,11 +1,11 @@
-\name{diff.ructions}
-\alias{diff.ructions}
+\name{diff.instructions}
+\alias{diff.instructions}
 \title{The measurement of the variation of the total redundancy
 }
 \description{
 This function measures the variation of the total redundancy.}
 \usage{
-diff.ructions(training.set, HX, HXmax, Herror, Redundancia_corregida)
+diff.instructions(training.set, HX, HXmax, Herror, Redundancia_corregida)
 }
 \arguments{
   \item{training.set}{A set of aligned nucleotide sequences}
@@ -37,5 +37,5 @@ HXmax<-entropy.max(Prob,q)
 prob<-probability(training.set,Prob,missing.fun=NULL)
 HX<-entropy(prob,q)
 Redundancia_corregida<-CalculRedundancy(training.set,Prob,q,Herror,HXmax)
-diff.ructions (training.set,HX,HXmax,Herror,Redundancia_corregida)}
+diff.instructions (training.set,HX,HXmax,Herror,Redundancia_corregida)}
 

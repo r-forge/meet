@@ -40,12 +40,8 @@ Erola Pairo <epairo@ibecbarcelona.eu>
 PCA, kfold.PCA
 }
 \examples{
-data(TranscriptionFactor)
-data(BackgroundOrganism)
 data(numericalTF)
 nPCs<-3
-numericalData<-convertDNA(TranscriptionFactor, BackgroundOrganism)
-
-solution<-PCanalysis(TFBS=numericalData, nPCs=nPCs, numericalDNA)
+solution<-PCanalysis(TFBS=numericalDNA, nPCs=nPCs, numericalDNA)
 
 }
