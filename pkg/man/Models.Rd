@@ -15,6 +15,7 @@ Joan Maynou <joan.maynou@upc.edu> and Erola Pairo  <epairo@ibecbarcelona.eu>
 }
 \examples{
 data(iicc)
+iicc$parametersIdeal<-1
 Models(iicc)
 }
 
