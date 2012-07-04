@@ -8,5 +8,5 @@ Maintainer: Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@u
 Description: MEET is an R-package that includes a set of models and tools for the detection of cis-regulatory sequences. 
 License: GPL(>=2)
 LazyLoad: yes
-Depends: R (>= 2.11.0), seqinr, fields, pcaMethods, Matrix, ROCR, Hmisc, KernSmooth 
+Depends: R (>= 2.11.0), seqinr, fields, pcaMethods, Matrix, ROCR, Hmisc, KernSmooth, seqLogo, methods.
 Packaged: 2011-08-22 14:56:09 UTC; erola
