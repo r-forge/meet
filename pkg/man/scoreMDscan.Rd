@@ -27,7 +27,7 @@ run.read.MDscan
 }
 \examples{
 data(iicc)
-data(TranscriptioFactor)
-matriu<-TranscriptionFactor
+#data(TranscriptionFactor)
+#matriu<-TranscriptionFactor
 #scoreMDscan(input=resultsMDscan,k=length(iicc$DNA),matriu,direction="b")
 }

@@ -31,7 +31,6 @@ q<-1
 correction<-correction.entropy(q,p=nrow(training.set),long=1,iicc)
 Herror<-slot(correction,"Herror")
 HXmax<-iicc$HXmax
-prob<-probability(training.set,Prob,missing.fun=NULL)
 HX<-iicc$Entropy[[1]]
 Redundancia_corregida<-CalculRedundancy(training.set,q,iicc)
 diffInstructions (training.set,HX,HXmax,Herror,Redundancia_corregida)
