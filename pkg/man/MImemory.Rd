@@ -18,5 +18,14 @@ Joan Maynou <joan.maynou@upc.edu>
 
 \seealso{
 MIread}
+\examples{
+data(iicc)
+data(BackgroundOrganism)
+training.set<-iicc$Transcriptionfactor
+val.set<-sample(c('A','T','C','G'),ncol(training.set), replace=TRUE,Prob)
+res<-detector_2nOrdre_init(training.set, val.set, iicc)
+iicc<-c(iicc,res)
+iicc$parametersIdeal<-1
+MImemory(iicc,training.set)}
 
 

@@ -19,5 +19,5 @@ J. Thompson, D. Higgins, and T. Gibson, Clustal w: improving the sensitivity of 
 \seealso{align.MEME, align.MUSCLE}
 \examples{
 pathMEET<-system.file("exdata",package="MEET")
-align.clustalw(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa",call=call.clustalw)}
+#align.clustalw(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa",call=call.clustalw)}
 

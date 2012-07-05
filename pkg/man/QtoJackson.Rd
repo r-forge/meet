@@ -28,11 +28,10 @@ Erola Pairo <epairo@ibec.pcb.ub.es>}
 kfold.PCA, Predict.PCA, JacksonParameters
 }
 \examples{
-data(TranscriptionFactor)
 data(iicc)
-TFBS<-iicc$Transcriptionfactor
+    TFBS<-iicc$Transcriptionfactor
      Prob<-iicc$background
-    missing<-iicc$missing
+     missing<-iicc$missing
      NumericalMatrix<-numericalDNA(Prob)
     suma<-apply(TFBS,2,function(y){sum(y=="-")})
     threshold<-floor(nrow(TFBS)*missing/100)
@@ -40,8 +39,13 @@ TFBS<-iicc$Transcriptionfactor
     ncolTFBS<-ncol(TFBS)
     TFBSnum<-apply(TFBS,1,function(x){as.vector(t(NumericalMatrix[x,]))})
     TFBSnum<-t(TFBSnum)
+    nPCs<-1
     model<-pca(TFBSnum, nPcs=nPCs, method="svd", center=TRUE)
     JacksonPars<-JacksonParameters(nPCs,TFBSnum)
     Qres<-3.45
-    confidence<-QtoJackson(Qres)
+    h0<-JacksonPars$h0
+    x1<-JacksonPars$x1
+    x2<-JacksonPars$x2
+    x3<-JacksonPars$x3
+    confidence<-QtoJackson(Qres,h0,x1,x2,x3)
 }

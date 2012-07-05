@@ -14,6 +14,7 @@ Joan Maynou <joan.maynou@upc.edu> and Erola Pairo  <epairo@ibecbarcelona.eu>
 }
 \examples{
 data(iicc)
-Predict(iicc)
+iicc$threshold<-0.001
+Prediction(iicc)
 }
 

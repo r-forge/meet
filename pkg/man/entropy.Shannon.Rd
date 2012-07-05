@@ -20,9 +20,8 @@ Joan Maynou <joan.maynou@upc.edu>}
 entropy.max, entropy. conjunta, probability, entropy.corrected }
 \examples{
  data(TranscriptionFactor)
- data(RenyiOrder)
  data(BackgroundOrganism)
  training.set<-TranscriptionFactor
- wind<-probability(training.set,Prob,missing.fun=NULL)
+ wind<-probability(training.set,Prob,missing.fun=TRUE)
  entropy.Shannon(wind)}
 

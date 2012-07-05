@@ -35,7 +35,7 @@ MEET, kfold.transMEME, ModeltransMEME}
 data(iicc)
 data(TranscriptionFactor)
 iicc$method<-"transMEME"
-ModelTFBs<-ModeltransMEME(iicc)
-DetectedSequences<-PredicttransMEME(iicc, TF="Ap1.fa")
-
+pathMEET<-system.file("exdata",package="MEET")
+#ModelTFBs<-ModeltransMEME(iicc)
+#DetectedSequences<-PredicttransMEME(iicc, TF=paste(pathMEET,"AP1.fa",sep="/"))
 }

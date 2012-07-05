@@ -18,7 +18,8 @@
 
 \examples{
 pathMEET<-system.file("exdata",package="MEET")
-results<-MEET(org="Homo sapiens", nameTF='CREB1', seqin=paste(pathMEET,"DNAmeet.afa",sep="/"), method="Entropy", system="detection", direction="f", threshold=0.01, optionsFile='.optionsmeet')
+results<-MEET(org="Homo sapiens", nameTF='CREB1', seqin=paste(pathMEET,"DNAmeet.afa",sep="/"), method="Entropy", mode="detection", direction="f", threshold=0.01, optionsFile='.optionsmeet')
 writeResultsHTML(results)
+system("open index.html")
 }
 

@@ -29,5 +29,5 @@ run.read.MDscan
 data(iicc)
 data(TranscriptioFactor)
 matriu<-TranscriptionFactor
-scoreMDscan(input=resultatsMDscan,k=length(iicc$DNA),matriu,direction="b")
+#scoreMDscan(input=resultsMDscan,k=length(iicc$DNA),matriu,direction="b")
 }

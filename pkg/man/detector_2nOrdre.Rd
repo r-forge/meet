@@ -32,7 +32,8 @@ data(TranscriptionFactor)
 data(BackgroundOrganism)
 training.set<-TranscriptionFactor
 val.set<-sample(c('A','T','C','G'),ncol(training.set), replace=TRUE,Prob)
-options<-detector_2nOrdre_init(training.set, val.set, iicc,i=1)
+options<-detector_2nOrdre_init(training.set, val.set, iicc)
+iicc<-c(iicc,options)
 out<-detector_2nOrdre(training.set, val.set, iicc)
 }
 

@@ -24,11 +24,10 @@ joint.probability(training.set, Prob, prob_parella)
 \examples{
 data(TranscriptionFactor)
 data(BackgroundOrganism)
-
 training.set<-TranscriptionFactor
-
-prob_parella<-probabilitat.conjunta(Prob)
-pmXY<-joint.probability(training.set, Prob, prob_parella)}
+prob_parella<-probability.couple(Prob)
+pmXY<-joint.probability(training.set, Prob, prob_parella)
+}
 
 
 

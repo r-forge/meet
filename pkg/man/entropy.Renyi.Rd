@@ -25,6 +25,6 @@ entropy.max, entropy.conjunta, probability, entropy.corrected }
  data(RenyiOrder)
  data(BackgroundOrganism)
  training.set<-TranscriptionFactor
- wind<-probability(training.set,Prob,missing.fun=NULL)
+ wind<-probability(training.set,Prob,missing.fun=TRUE)
  entropy.Renyi(wind,q)}
 

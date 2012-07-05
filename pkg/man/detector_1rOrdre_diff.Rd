@@ -31,16 +31,9 @@ detector_2Ordre, MEME, MDscan, Q-residuals and MATCH
 data(iicc)
 data(TranscriptionFactor)
 data(BackgroundOrganism)
-
 training.set<-TranscriptionFactor
 k<-1000
 training.set_x<-sample(c('A','T','C','G'),k, replace=TRUE,Prob)
-iicc$parameters<-q
-iicc$correction_1rOrdre <- correction.entropy(q,length(training.set),1,Prob)
-iicc$Herror<-slot(iicc$correction_1rOrdre,"Herror")
-iicc$HXmax<-entropy.max(Prob,q)
-iicc$Redundancia_corregida<-CalculRedundancy(training.set,Prob,q,iicc$Herror,iicc$HXmax)
-iicc$ErrorHX<-iicc$HXmax-slot(iicc$correction_1rOrdre,"Herror")[length(training.set)]
 seq.rand<-NULL
 Resultat<-(sapply(X=c(1:(k-ncol(training.set)+1)),
             FUN = function(X, training.set, training.set_x,iicc) {

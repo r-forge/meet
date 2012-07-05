@@ -27,16 +27,15 @@ divergence.Shannon, PredictDivergence
 data(TranscriptionFactor)
 data(BackgroundOrganism)
 data(RenyiOrder)
-
+data(iicc)
+q<-0.5
 training.set<-TranscriptionFactor
-correction<-correction.entropy(q,p=nrow(training.set),long=1,Prob)
-HXmax<-entropy.max(Prob,q)
-pmX<--probability(training.set,Prob,missing.fun=NULL)
-prob_parella<-probabilitat.conjunta(Prob)
-entropy<-get("entropy",pos="package:MEET") 
-H<-entropy(pmX,q)
+correction<-correction.entropy(q,p=nrow(training.set),long=1,iicc)
+HXmax<-iicc$HXmax
+pmX<-probability(training.set,Prob,missing.fun=TRUE)
+prob_parella<-probability.couple(Prob)
 pmXY<-joint.probability(training.set, Prob, prob_parella)
-HXY<-entropy.joint(pmXY,q)
+HXY<-entropy.joint(pmXY,q,iicc)
 divergence.Renyi(training.set,pmX,pmXY,q,correction)
 }
 

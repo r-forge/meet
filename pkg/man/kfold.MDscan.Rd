@@ -28,6 +28,6 @@ kfold.Divergence, kfold.Entropy, kfold.MEME, kfold.MATCH and kfold.PCA
 \examples{
 data(iicc)
 pathMEET<-system.file("exdata",package="MEET")
-kfold.MDscan(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))
+#kfold.MDscan(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))
 }
 

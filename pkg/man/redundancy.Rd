@@ -26,13 +26,12 @@ correction.redundancy, correction.entropy, entropy}
 \examples{
 data(TranscriptionFactor)
 data(BackgroundOrganism)
-data(RenyiOrder)
-Factortrans<-TranscriptionFactor
-entropy<-get("entropy",pos="package:MEET")
-correction<-correction.entropy(q,p=nrow(Factortrans),long=1,Prob)
+data(iicc)
+HXmax<-iicc$HXmax
+HX<-iicc$entropy[[1]]
+Factortrans<-iicc$Transcriptionfactor
+correction<-correction.entropy(q,p=nrow(Factortrans),long=1,iicc)
 Herror<-slot(correction,"Herror")
-HXmax<-entropy.max(Prob,q)
-prob<-probability(TranscriptionFactor,Prob,missing.fun=NULL)
-HX<-entropy(prob,q)
+prob<-probability(TranscriptionFactor,Prob,missing.fun=TRUE)
 redundancy(HX,HXmax,Herror,finite=nrow(Factortrans),correction=TRUE)}
 

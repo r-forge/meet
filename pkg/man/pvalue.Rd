@@ -17,5 +17,5 @@ This function needs the next packages: KernSmooth and Hmisc}
 Helena Brunel <helena.brunel@upc.edu>}
 
 \examples{
-pvalue(a="3.298",dist)}
+#pvalue(a="3.298",dist)}
 

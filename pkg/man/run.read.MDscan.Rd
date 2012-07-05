@@ -27,6 +27,5 @@ X. S. Liu, D. L. Brutlag, and J. S. Liu, An algorithm for finding proteindna bin
 \seealso{MEET, kfold.PredictInformationTheory, MEME, kfold.PredictDivergence, kfold.PCA}
 \examples{
 data(iicc)
-run.read.MDscan(input=iicc$DNA,k=length(iicc$DNA),
-len_motif=c(10,11,12), num_motif=2, call.MDscan)}
+#run.read.MDscan(input=iicc$DNA,k=length(iicc$DNA),len_motif=c(10,11,12), num_motif=2, call.MDscan)}
 

@@ -23,22 +23,17 @@ T. D. Schneider, G. Stormo, L. Gold, and A. Ehrenfeuch, The infor- mation conten
 \author{
 Joan Maynou <joan.maynou@upc.edu>
 }
-
 \seealso{
 correctionaprox, correction.entropy
 }
 \examples{
-data(TranscriptionFactor)
-data(BackgroundOrganism)
+data(iicc)
 data(RenyiOrder)
-Factortrans<-TranscriptionFactor
-
-correction<-correction.entropy(q,p=nrow(Factortrans),long=1,Prob)
+Factortrans<-iicc$Transcriptionfactor
+HXmax<-iicc$HXmax
+H<-iicc$Entropy[[1]]
+correction<-correction.entropy(q,p=nrow(Factortrans),long=1,iicc)
 ErrorHX<-slot(correction,"sderror")[nrow(Factortrans)]
-HXmax<-entropy.max(Prob,q)
-prob<-probability(TranscriptionFactor,Prob,missing.fun=NULL)
-entropy<-get("entropy",pos="package:MEET") 
-H<-entropy(prob,q)
 entropy.corrected(H,ErrorHX,HXmax)
 }
 

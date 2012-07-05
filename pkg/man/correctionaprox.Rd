@@ -28,11 +28,8 @@ Joan Maynou <joan.maynou@upc.edu>
 entropy, redundancy, correction.redundancy, correction.entropy
 }
 \examples{
-data(TranscriptionFactor)
-data(BackgroundOrganism)
-data(RenyiOrder)
+data(iicc)
 s<-4
-HXmax<-entropy.max(Prob,q)
-correctionaprox(x=HXmax,matriu=TranscriptionFactor,s) 
+correctionaprox(x=iicc$HXmax,matriu=iicc$Transcriptionfactor,s) 
 }
 

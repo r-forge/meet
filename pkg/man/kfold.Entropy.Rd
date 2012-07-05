@@ -33,5 +33,6 @@ kfold.Divergence, kfold.MEME, kfold.MDscan, kfold.MATCH and kfold.PCA
 \examples{ 
 data(iicc)
 pathMEET<-system.file("exdata",package="MEET")
-kfold.Entropy(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
+kfold.Entropy(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))
+}
 

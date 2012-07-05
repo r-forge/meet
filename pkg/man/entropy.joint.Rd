@@ -17,15 +17,12 @@ entropy.joint(pmXY,q,iicc)
 \author{Joan Maynou <joan.maynou@upc.edu>}
 \seealso{entropy}
 \examples{
-data(TranscriptionFactor)
 data(BackgroundOrganism)
 data(RenyiOrder)
 data(iicc)
-
-training.set<-TranscriptionFactor
-
-prob_parella<-probabilitat.conjunta(Prob)
+training.set<-iicc$Transcriptionfactor
+prob_parella<-probability.couple(Prob)
 pmXY<-joint.probability(training.set, Prob, prob_parella)
-
-entropy.joint(pmXY,q,iicc)}
+entropy.joint(pmXY,q,iicc)
+}
 

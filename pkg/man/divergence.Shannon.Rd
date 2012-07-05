@@ -26,18 +26,17 @@ Joan Maynou <joan.maynou@upc.edu>
 divergence.Renyi, PredictDivergence, kfold.divergence
 }
 \examples{
-data(TranscriptionFactor)
 data(BackgroundOrganism)
+data(iicc)
+HXmax<-iicc$HXmax
+H<-iicc$Entropy[[1]]
 q<-1
-
-training.set<-TranscriptionFactor
-correction<-correction.entropy(q,p=nrow(training.set),long=1,Prob)
-HXmax<-entropy.max(Prob,q)
-pmX<--probability(training.set,Prob,missing.fun=NULL)
-prob_parella<-probabilitat.conjunta(Prob)
-entropy<-get("entropy",pos="package:MEET") 
-H<-entropy(pmX,q)
+training.set<-iicc$Transcriptionfactor
+correction<-correction.entropy(q,p=nrow(training.set),long=1,iicc)
+pmX<-probability(training.set,Prob,missing.fun=TRUE)
+prob_parella<-probability.couple(Prob)
 pmXY<-joint.probability(training.set, Prob, prob_parella)
-HXY<-entropy.joint(pmXY,q)
-divergence.Shannon(training.set,H,HXY,correction)}
+HXY<-entropy.joint(pmXY,q,iicc)
+divergence.Shannon(training.set,H,HXY,correction)
+}
 

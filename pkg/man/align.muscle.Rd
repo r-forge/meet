@@ -40,6 +40,6 @@ align.clustalw, align.MEME
 }
 \examples{
 pathMEET<-system.file("exdata",package="MEET")
-align.muscle(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa", gapen=-12, maxiters=16, gapextend=-1, call="muscle")
+#align.muscle(filein=paste(pathMEET,"AP1.fa",sep="/"), fileout="Sq.fa", gapen=-12, maxiters=16, gapextend=-1, call="muscle")
 }
 

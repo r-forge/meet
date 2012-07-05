@@ -26,7 +26,6 @@ joint.probability, probIdem, probtransicio
 data(TranscriptionFactor)
 data(BackgroundOrganism)
 wind<-TranscriptionFactor
-missing.fun<-TRUE
-probability(wind,Prob,missing.fun)
+probability(wind,Prob,missing.fun=TRUE)
 }
 

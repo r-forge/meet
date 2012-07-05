@@ -24,8 +24,8 @@ Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 iicc<-vector(mode="list",length=4)
 iicc$nummotif<-c(1,2)
 iicc$lenmotif<-c(10,11,12)
-iiccs$call.meme<-"./meme"
+iicc$call.meme<-"./meme"
 pathMEET<-system.file("exdata",package="MEET")
-align.MEME(filein=paste(pathMEET,"AP1.fa",sep="/"),fileout="Sq.fa",iicc)
+#align.MEME(filein=paste(pathMEET,"AP1.fa",sep="/"),fileout="Sq.fa",iicc)
 }
 

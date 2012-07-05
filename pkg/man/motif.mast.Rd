@@ -20,4 +20,4 @@ Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>}
 data(TranscriptionFactor)
 data(iicc)
 Factortrans<-TranscriptionFactor
-motif.mast(input,Factortrans,k=length(iicc$DNA),m=1)}
+#motif.mast(input,Factortrans,k=length(iicc$DNA),m=1)}

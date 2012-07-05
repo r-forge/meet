@@ -30,5 +30,5 @@ kfold.PredictDivergence, kfold.PredictInformationTheory, MDscan, kfold.MATCH and
 \examples{
 data(iicc)
 pathMEET<-system.file("exdata",package="MEET")
-kfold.MEME(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
+#kfold.MEME(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
 

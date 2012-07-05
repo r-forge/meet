@@ -22,12 +22,10 @@ Joan Maynou <joan.maynou@upc.edu>
 redundancy, entropy,CalculRedundancy, correction.entropy, correctionaprox
 }
 \examples{
+data(iicc)
 data(TranscriptionFactor)
-data(BackgroundOrganism)
-data(RenyiOrder)
-Factortrans<-TranscriptionFactor
-correction<-correction.entropy(q,p=nrow(Factortrans),long=1,Prob)
-Herror<-slot(correction,"Herror")
-HXmax<-entropy.max(Prob,q)
-correction.redundancy(r=1,HXmax,Herror,finite=nrow(TranscriptionFactor))}
+HXmax<-iicc$HXmax
+Herror<-iicc$Herror
+correction.redundancy(r=1,HXmax,Herror,finite=nrow(TranscriptionFactor))
+}
 

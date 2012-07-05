@@ -35,8 +35,8 @@ Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 align.MEME
 }
 \examples{
-resultat<-"/memeout/meme.txt"
-num_motif=2
-readMEME(resultat, num_motif)
+
+#num_motif=2
+#readMEME(result_MEME, num_motif)
 }
 

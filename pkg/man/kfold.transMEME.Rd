@@ -30,5 +30,5 @@ Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 \examples{
 data(iicc)
 pathMEET<-system.file("exdata",package="MEET")
-kfold.transMEME(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
+#kfold.transMEME(iicc,TF=paste(pathMEET,"AP1.fa",sep="/"))}
 

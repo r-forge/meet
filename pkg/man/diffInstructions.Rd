@@ -25,17 +25,15 @@ Joan Maynou <joan.maynou@upc.edu>
 }
 
 \examples{
-
-data(TranscriptionFactor)
-data(BackgroundOrganism)
-data(RenyiOrder)
-training.set<-TranscriptionFactor
-correction<-correction.entropy(q,p=nrow(training.set),long=1,Prob)
+data(iicc)
+training.set<-iicc$Transcriptionfactor
+q<-1
+correction<-correction.entropy(q,p=nrow(training.set),long=1,iicc)
 Herror<-slot(correction,"Herror")
-entropy<-get("entropy",pos="package:MEET") 
-HXmax<-entropy.max(Prob,q)
+HXmax<-iicc$HXmax
 prob<-probability(training.set,Prob,missing.fun=NULL)
-HX<-entropy(prob,q)
-Redundancia_corregida<-CalculRedundancy(training.set,Prob,q,Herror,HXmax)
-diffInstructions (training.set,HX,HXmax,Herror,Redundancia_corregida)}
+HX<-iicc$Entropy[[1]]
+Redundancia_corregida<-CalculRedundancy(training.set,q,iicc)
+diffInstructions (training.set,HX,HXmax,Herror,Redundancia_corregida)
+}
 

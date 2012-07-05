@@ -21,6 +21,6 @@ Erola Pairo <epairo@ibecbarcelona.eu> and Joan Maynou <joan.maynou@upc.edu>
 
 \examples{
 data(iicc)
-ROCmodel(Scores, labels, iicc)
+#ROCmodel(Scores, labels, iicc)
 }
 
